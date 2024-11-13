@@ -1,0 +1,321 @@
+/* 
+  Localizable.strings
+  ServiceProvider
+
+  Created by mac on 16/03/20.
+  Copyright © 2020 mac. All rights reserved.
+*/
+
+
+"No Internet Connection. Make sure your device is connected to the internet." = "No Internet Connection. Make sure your device is connected to the internet.";
+
+"OK" = "OK";
+
+"Loading" = "Loading";
+
+"Please Wait!!" = "Please Wait!!";
+
+"Cancel" = "Cancel";
+
+"DATE" = "DATE";
+
+"Done" = "Done";
+
+"Camera" = "Camera";
+
+"Gallery" = "Gallery";
+
+"Yes" = "Yes";
+
+"No" = "No";
+
+"No data available to show" = "No data available to show";
+
+"Please enter full name" = "Please enter full name";
+
+"Please enter email address" = "Please enter email address";
+
+"Invalid email address" = "Invalid email address";
+
+"Please enter password" = "Please enter password";
+
+"Please enter confirm password" = "Please enter confirm password";
+
+"Password not matched" = "Password not matched";
+
+"Something went wrong" = "Something went wrong";
+
+"Profile Update Successfully" = "Profile Update Successfully";
+
+"Are you sure you want to log out?" = "Are you sure you want to log out?";
+
+"Thank You..!! We'll be in touch shortly." = "Thank You..!! We'll be in touch shortly.";
+
+"Write some message" = "Write some message";
+
+"Thank you for registration..!!" = "Thank you for registration..!!";
+
+
+
+"Home" = "Home";
+
+"Edit Profile" = "Edit Profile";
+
+"Change Password" = "Change Password";
+
+"Change Language" = "Change Language";
+
+"My Chat" = "My Chat";
+
+"About us" = "About us";
+
+"Privacy Policy" = "Privacy Policy";
+
+"Terms and Condition" = "Terms and Condition";
+
+"Choose Language" = "Choose Language";
+
+"Offers" = "Offers";
+
+"Share APP & Earn" = "Share APP & Earn";
+
+"Orders" = "Orders";
+
+"Rate this App" = "Rate this App";
+
+"Help & Support" = "Help & Support";
+
+"Logout" = "Logout";
+
+"Gift" = "Gift";
+
+"My Reviews" = "My Reviews";
+
+"My Wallet" = "My Wallet";
+
+"My Earning" = "My Earning";
+
+"You have entered wrong email or password" = "You have entered wrong email or password";
+
+"Please check your email to reset" = "Please check your email to reset";
+
+"Members" = "Members";
+
+"Password changed successfully" = "Password changed successfully";
+
+"Please enter message" = "Please enter message";
+
+
+"Login" = "Login";
+
+"Forgot Password" = "Forgot Password";
+
+"Sign up" = "Sign up";
+
+"My Profile" = "My Profile";
+
+"Send message..." = "Send message...";
+
+"Write here..." = "Write here...";
+
+"New password sent to your email." = "New password sent to your email.";
+
+"please enter valid details" = "please enter valid details";
+
+"Cart deleted successfully" = "Cart deleted successfully";
+
+"Cart updated successfully" = "Cart updated successfully";
+
+"Order place successfully" = "Order place successfully";
+
+"Total Gift Amount" = "Total Gift Amount";
+
+"Item added to cart successfully" = "Item added to cart successfully";
+
+"Please select any payment method" = "Please select any payment method";
+
+"Your Gift Amount:" = "Your Gift Amount:";
+
+"Order Now" = "Order Now";
+
+"Amount" = "Amount";
+
+"Country" = "Country";
+
+"Action Code" = "Action Code";
+
+"Currency" = "Currency";
+
+"Email" = "Email";
+
+"TrackID" = "TrackID";
+
+"TockenID" = "TockenID";
+
+"Alert" = "Alert";
+
+"Check" = "Check";
+
+"Order Id:" = "Order Id:";
+
+"NA" = "NA";
+
+"Wrong gift code" = "Wrong gift code";
+
+"No offers available" = "No offers available";
+
+"Your cart is empty" = "Your cart is empty";
+
+"Please check terms and condition" = "Please check terms and condition";
+
+"User Already Exists" = "User Already Exists";
+
+"Please register to continue." = "Please register to continue.";
+
+"App is available in Alaryan branch" = "App is available in Alaryan branch";
+
+"Use Code" = "Use Code";
+
+"The offer is valid from" = "The offer is valid from";
+
+"to" = "to";
+
+"Expire on" = "Expire on";
+
+"You need to select the any one item from  all single choice menu" = "You need to select the any one item from  all single choice menu";
+
+"My Address" = "My Address";
+
+"Address Deleted successfully" = "Address Deleted successfully";
+
+"location not found" = "location not found";
+
+"Rating added successfully" = "Rating added successfully";
+
+"Restaurant Information" = "Restaurant Information";
+
+"Have not you recieved the code? " = "Have not you recieved the code? ";
+
+"Resend" = "Resend";
+
+"Remaining time:" = "Remaining time:";
+
+"min" = "min";
+
+"sec" = "sec";
+
+"Incorrect code." = "Incorrect code.";
+
+"Incorrect OTP" = "Incorrect OTP";
+
+"For continue you need to accept" = "For continue you need to accept";
+
+// Mar 14
+
+"Total Cart:" = "Total Cart:";
+
+"Order ID:" = "Order ID:";
+
+"Pre Order ID:" = "Pre Order ID:";
+
+"Completed" = "Completed";
+
+"My Favourite" = "My Favourite";
+
+"Offer" = "Offer";
+
+"Menu" = "Menu";
+
+"Load More" = "Load More";
+
+"My Cart" = "My Cart";
+
+"Apply Offer" = "Apply Offer";
+
+"Enter email address" = "Enter email address";
+
+"Order Details" = "Order Details";
+
+"Order placed successfully" = "Order placed successfully";
+
+"Products" = "Products";
+
+"Item Detail" = "Item Detail";
+
+"Phone Number :" = "Phone Number :";
+
+"Tax Number:" = "Tax Number:";
+
+"Your Fee" = "Your Fee";
+
+"Notify user for order picked" = "Notify user for order picked";
+
+"Notify user to arrived" = "Notify user to arrived";
+
+"Click to deliver" = "Click to deliver";
+
+"Rate user and finish" = "Rate user and finish";
+
+"My Earnings" = "My Earnings";
+
+"Notifications" = "Notifications";
+
+"Withdraw Wallet Amount" = "Withdraw Wallet Amount";
+
+"Assigned Driver" = "Assigned Driver";
+
+"Give Rating" = "Give Rating";
+
+"Add Details" = "Add Details";
+
+"Please update your restaurant details from update restaurant screen." = "Please update your restaurant details from update restaurant screen.";
+
+"Pending" = "Pending";
+
+"Preparing" = "Preparing";
+
+"Ready" = "Ready";
+
+"Track Order" = "Track Order";
+
+"Rejected" = "Rejected";
+
+"Request for withdrawal send successfully" = "Request for withdrawal send successfully";
+
+"Vega invest Aps CVR:" = "Vega invest Aps CVR:";
+
+"TLF:" = "TLF:";
+
+"Not Paid" = "Not Paid";
+
+"Name" = "Name";
+
+"Address:" = "Address:";
+
+"Mobile:" = "Mobile:";
+
+"Restaurant" = "Restaurant";
+
+"Available Driver" = "Available Driver";
+
+"km away" = "km away";
+
+"On the way to pickup" = "On the way to pickup";
+
+"Notify driver again" = "Notify driver again";
+
+"You need to select item from below list" = "You need to select item from below list";
+
+"Please select address" = "Please select address";
+
+"Enter your business code" = "Enter your business code";
+
+"Enter offer code" = "Enter offer code";
+
+"Are you sure, you want to delete account" = "Are you sure, you want to delete account";
+
+"Please check your Mobile and check SMS for new password." = "Please check your Mobile and check SMS for new password.";
+
+"Optional" = "Optional";
+
+"Extra Items" = "Extra Items";

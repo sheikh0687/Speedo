@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OfferCell" rowHeight="186" id="KGk-i7-Jjw" customClass="OfferCell" customModule="Speedo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vls-md-Omk">
+                        <rect key="frame" x="8" y="4" width="304" height="178"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RR_banner_1612440144" translatesAutoresizingMaskIntoConstraints="NO" id="uPq-YM-NS3">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="178"/>
+                            </imageView>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daR-MH-PEM">
+                                <rect key="frame" x="0.0" y="118" width="304" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUE!23" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skv-b6-ubu">
+                                        <rect key="frame" x="8" y="11" width="288" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="HWv-R2-oN2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use this code at the time of order and get flat discount" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIN-2K-20a">
+                                        <rect key="frame" x="8" y="29" width="288" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7fx-p0-Y03"/>
+                                    <constraint firstAttribute="trailing" secondItem="skv-b6-ubu" secondAttribute="trailing" constant="8" id="FZl-NE-sgh"/>
+                                    <constraint firstItem="GIN-2K-20a" firstAttribute="top" secondItem="skv-b6-ubu" secondAttribute="bottom" constant="0.01" id="GEY-2H-Mq1"/>
+                                    <constraint firstItem="skv-b6-ubu" firstAttribute="leading" secondItem="daR-MH-PEM" secondAttribute="leading" constant="8" id="N8W-ij-pl8"/>
+                                    <constraint firstAttribute="trailing" secondItem="GIN-2K-20a" secondAttribute="trailing" constant="8" id="hZa-rO-KMb"/>
+                                    <constraint firstItem="GIN-2K-20a" firstAttribute="leading" secondItem="daR-MH-PEM" secondAttribute="leading" constant="8" id="m8C-bR-gSQ"/>
+                                    <constraint firstItem="skv-b6-ubu" firstAttribute="centerY" secondItem="daR-MH-PEM" secondAttribute="centerY" constant="-10" id="mol-Yw-t1e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uPq-YM-NS3" secondAttribute="bottom" constant="0.01" id="1nu-9m-KUO"/>
+                            <constraint firstItem="uPq-YM-NS3" firstAttribute="leading" secondItem="Vls-md-Omk" secondAttribute="leading" constant="0.01" id="NfV-FX-oBK"/>
+                            <constraint firstAttribute="trailing" secondItem="uPq-YM-NS3" secondAttribute="trailing" constant="0.01" id="ZhN-Kp-roY"/>
+                            <constraint firstAttribute="trailing" secondItem="daR-MH-PEM" secondAttribute="trailing" constant="0.01" id="cQg-Vn-WhY"/>
+                            <constraint firstItem="daR-MH-PEM" firstAttribute="leading" secondItem="Vls-md-Omk" secondAttribute="leading" constant="0.01" id="f9c-UG-ZAd"/>
+                            <constraint firstAttribute="bottom" secondItem="daR-MH-PEM" secondAttribute="bottom" constant="0.01" id="kJp-Lv-Pud"/>
+                            <constraint firstItem="uPq-YM-NS3" firstAttribute="top" secondItem="Vls-md-Omk" secondAttribute="top" constant="0.01" id="mcs-yG-920"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vls-md-Omk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="0hL-ti-WXF"/>
+                    <constraint firstItem="Vls-md-Omk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NbM-f4-ncZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Vls-md-Omk" secondAttribute="bottom" constant="4" id="RZ1-0Z-gYD"/>
+                    <constraint firstAttribute="trailing" secondItem="Vls-md-Omk" secondAttribute="trailing" constant="8" id="lIE-Aq-6Ok"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="82.608695652173921" y="95.758928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="RR_banner_1612440144" width="500" height="250"/>
+    </resources>
+</document>

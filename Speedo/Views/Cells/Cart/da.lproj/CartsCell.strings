@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "1"; ObjectID = "15i-d3-md7"; */
+"15i-d3-md7.text" = "1";
+
+/* Class = "UILabel"; text = "00"; ObjectID = "4Ux-Cy-nZW"; */
+"4Ux-Cy-nZW.text" = "00";
+
+/* Class = "UILabel"; text = "lorem ipsum"; ObjectID = "KPH-XD-pvO"; */
+"KPH-XD-pvO.text" = "lorem ipsum";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "Q3i-1y-vi0"; */
+"Q3i-1y-vi0.normalTitle" = "-";
+
+/* Class = "UILabel"; text = "Category Name"; ObjectID = "S7q-VM-SnO"; */
+"S7q-VM-SnO.text" = "Category Name";
+
+/* Class = "UIButton"; normalTitle = "Apply Offer"; ObjectID = "Vfq-Yy-Zny"; */
+"Vfq-Yy-Zny.normalTitle" = "Anvend tilbud";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "dWV-M4-VAp"; */
+"dWV-M4-VAp.text" = "Product Name";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "sbh-m8-tdb"; */
+"sbh-m8-tdb.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "tor-q0-Bge"; */
+"tor-q0-Bge.text" = "0";

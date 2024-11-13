@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; normalTitle = "Notify User to Arrived"; ObjectID = "5Tu-9e-ae4"; */
+"5Tu-9e-ae4.normalTitle" = "Notify User to Arrived";
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "6bP-ce-wV8"; */
+"6bP-ce-wV8.text" = "Test Item";
+
+/* Class = "UILabel"; text = "Open"; ObjectID = "9t9-Ra-lya"; */
+"9t9-Ra-lya.text" = "Open";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "Lx0-Un-Saq"; */
+"Lx0-Un-Saq.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UILabel"; text = "ORDERED ON"; ObjectID = "MMW-Br-f2z"; */
+"MMW-Br-f2z.text" = "ORDERED ON";
+
+/* Class = "UILabel"; text = "Order Id: 1"; ObjectID = "Orp-OD-yhP"; */
+"Orp-OD-yhP.text" = "Order Id: 1";
+
+/* Class = "UILabel"; text = "$10"; ObjectID = "P66-9G-g0B"; */
+"P66-9G-g0B.text" = "$10";
+
+/* Class = "UILabel"; text = "Delivered"; ObjectID = "S9x-Mz-IZN"; */
+"S9x-Mz-IZN.text" = "Delivered";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "WRj-iK-Q66"; */
+"WRj-iK-Q66.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UILabel"; text = "ITEMS"; ObjectID = "XUg-wv-3kc"; */
+"XUg-wv-3kc.text" = "ITEMS";
+
+/* Class = "UIButton"; normalTitle = "Accept"; ObjectID = "daE-fJ-qe6"; */
+"daE-fJ-qe6.normalTitle" = "Accept";
+
+/* Class = "UIButton"; normalTitle = "See on map"; ObjectID = "emZ-Mv-sM6"; */
+"emZ-Mv-sM6.normalTitle" = "See on map";
+
+/* Class = "UILabel"; text = "2021-04-20 07:08:15"; ObjectID = "gxq-AG-vd1"; */
+"gxq-AG-vd1.text" = "2021-04-20 07:08:15";
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "j5T-a2-eeo"; */
+"j5T-a2-eeo.text" = "Test Item";
+
+/* Class = "UILabel"; text = "Total: $10"; ObjectID = "ly5-o1-2Bw"; */
+"ly5-o1-2Bw.text" = "Total: $10";
+
+/* Class = "UILabel"; text = "4.5"; ObjectID = "mSh-hW-2QV"; */
+"mSh-hW-2QV.text" = "4.5";
+
+/* Class = "UIButton"; normalTitle = "Print bill"; ObjectID = "rTL-pe-9Me"; */
+"rTL-pe-9Me.normalTitle" = "Print bill";
+
+/* Class = "UIButton"; normalTitle = "Reject"; ObjectID = "sfB-j8-p0D"; */
+"sfB-j8-p0D.normalTitle" = "Reject";

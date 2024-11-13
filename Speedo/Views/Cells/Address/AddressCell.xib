@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddressCell" rowHeight="121" id="KGk-i7-Jjw" customClass="AddressCell" customModule="Speedo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0R2-75-s9i">
+                        <rect key="frame" x="12" y="8" width="304" height="105"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwW-YB-74b">
+                                <rect key="frame" x="212" y="0.0" width="92" height="105"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHs-8X-F2i">
+                                        <rect key="frame" x="10" y="34.5" width="72" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctk-tO-WqS">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="KKV-0c-tDR"/>
+                                                    <constraint firstAttribute="height" constant="36" id="TG0-lS-8iB"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" image="delete"/>
+                                                <connections>
+                                                    <action selector="btnDelete:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8GC-Nk-m3c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-9S-Oz0">
+                                                <rect key="frame" x="36" y="0.0" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="PEz-s3-qWN"/>
+                                                    <constraint firstAttribute="width" constant="36" id="q4a-EJ-2FO"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" image="right"/>
+                                                <connections>
+                                                    <action selector="btnSelect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oxM-zi-n3g"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sHs-8X-F2i" secondAttribute="trailing" constant="10" id="3FJ-Hp-P2B"/>
+                                    <constraint firstItem="sHs-8X-F2i" firstAttribute="centerY" secondItem="IwW-YB-74b" secondAttribute="centerY" id="6wS-nc-rsM"/>
+                                    <constraint firstItem="sHs-8X-F2i" firstAttribute="leading" secondItem="IwW-YB-74b" secondAttribute="leading" constant="10" id="9W0-mk-io3"/>
+                                    <constraint firstItem="sHs-8X-F2i" firstAttribute="centerX" secondItem="IwW-YB-74b" secondAttribute="centerX" id="OJr-Ko-16Y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth1">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor1">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palasia square, Near Rajwada, New york, USA." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-PY-gfi">
+                                <rect key="frame" x="10" y="28" width="192" height="67"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palasia square, Near Rajwada, New york, USA." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1O-Uq-jJx">
+                                <rect key="frame" x="10" y="8" width="192" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="t9K-yJ-ucM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IwW-YB-74b" secondAttribute="trailing" constant="0.01" id="2qc-0e-o1I"/>
+                            <constraint firstItem="IwW-YB-74b" firstAttribute="top" secondItem="0R2-75-s9i" secondAttribute="top" constant="0.01" id="3cB-q3-N1F"/>
+                            <constraint firstAttribute="bottom" secondItem="IwW-YB-74b" secondAttribute="bottom" constant="0.01" id="Rxr-I8-m1g"/>
+                            <constraint firstItem="Cee-PY-gfi" firstAttribute="top" secondItem="X1O-Uq-jJx" secondAttribute="bottom" constant="0.01" id="ThW-b7-Iyn"/>
+                            <constraint firstItem="IwW-YB-74b" firstAttribute="leading" secondItem="X1O-Uq-jJx" secondAttribute="trailing" constant="10" id="WyH-je-aBf"/>
+                            <constraint firstItem="IwW-YB-74b" firstAttribute="leading" secondItem="Cee-PY-gfi" secondAttribute="trailing" constant="10" id="XUj-Ks-YRU"/>
+                            <constraint firstItem="X1O-Uq-jJx" firstAttribute="leading" secondItem="0R2-75-s9i" secondAttribute="leading" constant="10" id="aTJ-RP-DjX"/>
+                            <constraint firstAttribute="bottom" secondItem="Cee-PY-gfi" secondAttribute="bottom" constant="10" id="diN-ih-7tH"/>
+                            <constraint firstItem="Cee-PY-gfi" firstAttribute="leading" secondItem="0R2-75-s9i" secondAttribute="leading" constant="10" id="eiD-h8-fPy"/>
+                            <constraint firstItem="X1O-Uq-jJx" firstAttribute="top" secondItem="0R2-75-s9i" secondAttribute="top" constant="8" id="wTV-4H-Scq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0R2-75-s9i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EXZ-4l-QVJ"/>
+                    <constraint firstItem="0R2-75-s9i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="XWm-Rr-FPr"/>
+                    <constraint firstAttribute="bottom" secondItem="0R2-75-s9i" secondAttribute="bottom" constant="8" id="ed3-pA-yk2"/>
+                    <constraint firstAttribute="trailing" secondItem="0R2-75-s9i" secondAttribute="trailing" constant="12" id="qpZ-Ud-D62"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblAddress" destination="Cee-PY-gfi" id="Vl8-4e-28t"/>
+                <outlet property="lblTitle" destination="X1O-Uq-jJx" id="Vmv-Fx-nxU"/>
+            </connections>
+            <point key="canvasLocation" x="-178.2608695652174" y="-2.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="54" height="64"/>
+        <image name="right" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

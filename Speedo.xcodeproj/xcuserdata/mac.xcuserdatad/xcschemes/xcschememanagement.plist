@@ -7,7 +7,25 @@
 		<key>Speedo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>30</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>040C2150262B588400D79EAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>040C2166262B588600D79EAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>040C2171262B588600D79EAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

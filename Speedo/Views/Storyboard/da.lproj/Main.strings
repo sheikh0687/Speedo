@@ -1,0 +1,833 @@
+/* Class = "UIButton"; normalTitle = "Print"; ObjectID = "0AH-XD-fDn"; */
+"0AH-XD-fDn.normalTitle" = "Print";
+
+/* Class = "UILabel"; text = "0000:00:00 00:00:00"; ObjectID = "0KE-3T-cBI"; */
+"0KE-3T-cBI.text" = " 00:00:00  00-00-0000";
+
+/* Class = "UILabel"; text = "Open"; ObjectID = "0ME-iA-foE"; */
+"0ME-iA-foE.text" = "Åben";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "0jg-J4-5K1"; */
+"0jg-J4-5K1.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UIButton"; normalTitle = "Current Orders"; ObjectID = "18M-x7-LzW"; */
+"18M-x7-LzW.normalTitle" = "nuværende order";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "1Ca-nK-A44"; */
+"1Ca-nK-A44.placeholder" = "telefon";
+
+/* Class = "UILabel"; text = "Product Detail:"; ObjectID = "1OK-5u-eZM"; */
+"1OK-5u-eZM.text" = " Produkt detaljer:";
+
+/* Class = "UIButton"; normalTitle = "UPDATE RESTAURANT"; ObjectID = "1qJ-1U-qd2"; */
+"1qJ-1U-qd2.normalTitle" = " Opdatere restaurant";
+
+/* Class = "UILabel"; text = "Grand Earning:"; ObjectID = "1vY-SS-C39"; */
+"1vY-SS-C39.text" = "Indtjening:";
+
+/* Class = "UILabel"; text = "Customer Detail"; ObjectID = "22H-R4-RzT"; */
+"22H-R4-RzT.text" = "Kunde information ";
+
+/* Class = "UIButton"; normalTitle = "Current Orders"; ObjectID = "22h-5x-kT5"; */
+"22h-5x-kT5.normalTitle" = "Nuværende Ordre";
+
+/* Class = "UILabel"; text = "Select date and time for pre order(Optional)"; ObjectID = "243-1v-IDc"; */
+"243-1v-IDc.text" = "Vælg dato og klokkeslæt for forudbestilling (valgfrit )";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "2FC-hE-03s"; */
+"2FC-hE-03s.text" = "1";
+
+/* Class = "UITextField"; placeholder = "Enter restaurant code"; ObjectID = "2PS-B7-Jw1"; */
+"2PS-B7-Jw1.placeholder" = "Indtast restaurant kode ";
+
+/* Class = "UILabel"; text = "Lebenese kebab speciality"; ObjectID = "2qX-n7-qj7"; */
+"2qX-n7-qj7.text" = "Libanesisk kebab specialitet";
+
+/* Class = "UILabel"; text = "Order Id: 0"; ObjectID = "312-LT-JTf"; */
+"312-LT-JTf.text" = "Ordre Id: 0";
+
+/* Class = "UILabel"; text = "00 Kr"; ObjectID = "3Se-Vh-RuO"; */
+"3Se-Vh-RuO.text" = "00 Kr";
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "3fF-af-3bG"; */
+"3fF-af-3bG.text" = "Test vare";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "3qq-EX-CrS"; */
+"3qq-EX-CrS.normalTitle" = "Annullere";
+
+/* Class = "UIButton"; normalTitle = "ADD TO CART"; ObjectID = "3sz-Bs-Eb9"; */
+"3sz-Bs-Eb9.normalTitle" = "Læg I kurven";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "40D-UE-CiR"; */
+"40D-UE-CiR.text" = "Bruger Navn";
+
+/* Class = "UIButton"; normalTitle = "Call"; ObjectID = "47l-ZT-L4I"; */
+"47l-ZT-L4I.normalTitle" = "Kald";
+
+/* Class = "UITextField"; placeholder = "Address"; ObjectID = "4GU-N2-SlS"; */
+"4GU-N2-SlS.placeholder" = "Adresse";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "4Ji-aJ-N09"; */
+"4Ji-aJ-N09.text" = "1";
+
+/* Class = "UILabel"; text = "Phone NumberL 123456789"; ObjectID = "4XE-MJ-zGO"; */
+"4XE-MJ-zGO.text" = "Telefon nummer 123456789";
+
+/* Class = "UILabel"; text = "Total Cart"; ObjectID = "4ch-L2-lbI"; */
+"4ch-L2-lbI.text" = "I alt ";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "4mM-d0-HOz"; */
+"4mM-d0-HOz.text" = "0.00";
+
+/* Class = "UILabel"; text = "Sayaji Kebab Villas"; ObjectID = "5pi-n0-llu"; */
+"5pi-n0-llu.text" = "Sayaji Kebab Villas";
+
+/* Class = "UILabel"; text = "Enter your nets  account secret key"; ObjectID = "6UT-bu-Vii"; */
+"6UT-bu-Vii.text" = "Indtast nets kontos hemmelig nøgle";
+
+/* Class = "UILabel"; text = "0.00 Kr"; ObjectID = "6ZX-aY-XoV"; */
+"6ZX-aY-XoV.text" = "0.00 Kr";
+
+/* Class = "UIButton"; normalTitle = "Change Password"; ObjectID = "6nH-pE-Nnk"; */
+"6nH-pE-Nnk.normalTitle" = "Skif adgangskode";
+
+/* Class = "UILabel"; text = "Subtotal"; ObjectID = "6ng-i4-VLi"; */
+"6ng-i4-VLi.text" = "Subtotal";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "6rZ-s8-9qO"; */
+"6rZ-s8-9qO.text" = "Telefon nummer";
+
+/* Class = "UIButton"; normalTitle = "ADD NEW ADDRESS"; ObjectID = "6s9-yw-fUO"; */
+"6s9-yw-fUO.normalTitle" = "Tilføj ny adresse";
+
+/* Class = "UILabel"; text = "Enter Tax Number"; ObjectID = "7At-xa-Ykm"; */
+"7At-xa-Ykm.text" = "Indtast CVR nr";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "7K2-6l-cGk"; */
+"7K2-6l-cGk.text" = "$0";
+
+/* Class = "UILabel"; text = "1 x Capri, 2 x Salad"; ObjectID = "7T5-JP-JVO"; */
+"7T5-JP-JVO.text" = "1 x Capri, 2 x Salad";
+
+/* Class = "UILabel"; text = "Order Id: 1"; ObjectID = "7fM-pl-wHv"; */
+"7fM-pl-wHv.text" = "Ordre Id: 1";
+
+/* Class = "UILabel"; text = "Last Name"; ObjectID = "83I-br-Vas"; */
+"83I-br-Vas.text" = "Efternavn";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "8Pc-X8-qjP"; */
+"8Pc-X8-qjP.text" = "Adresse";
+
+/* Class = "UILabel"; text = "25 SAR"; ObjectID = "8Y3-hC-F7D"; */
+"8Y3-hC-F7D.text" = "25 SAR";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "8dg-rK-wKH"; */
+"8dg-rK-wKH.placeholder" = "BrugerNavn";
+
+/* Class = "UILabel"; text = "We will provide you good service and want you will come back again."; ObjectID = "8gT-Ca-Bzt"; */
+"8gT-Ca-Bzt.text" = "Vi takker og siger på gensyn.";
+
+/* Class = "UIButton"; normalTitle = "Change Password"; ObjectID = "8hD-zw-xPO"; */
+"8hD-zw-xPO.normalTitle" = "Skift Adgangskode";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "8sV-TB-ajw"; */
+"8sV-TB-ajw.text" = "Total beløb ";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "99f-fl-XqG"; */
+"99f-fl-XqG.text" = "Total beløb";
+
+/* Class = "UILabel"; text = "Total Cart"; ObjectID = "AbX-Lh-A5p"; */
+"AbX-Lh-A5p.text" = "Total Indkøbskurv";
+
+/* Class = "UILabel"; text = "lorem ipsum"; ObjectID = "AiK-GO-zAp"; */
+"AiK-GO-zAp.text" = "lorem ipsum";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "Am9-3E-aVB"; */
+"Am9-3E-aVB.normalTitle" = "Opret konto";
+
+/* Class = "UILabel"; text = "0.00 Kr"; ObjectID = "AuT-a2-Tee"; */
+"AuT-a2-Tee.text" = "0.00 Kr";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "BQC-nP-LB2"; */
+"BQC-nP-LB2.placeholder" = "Telefon";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "BUe-j9-ZBA"; */
+"BUe-j9-ZBA.normalTitle" = "-";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "BfF-Aj-ish"; */
+"BfF-Aj-ish.text" = "Total Beløb";
+
+/* Class = "UILabel"; text = "$000"; ObjectID = "Bh4-rM-DQb"; */
+"Bh4-rM-DQb.text" = "$000";
+
+/* Class = "UILabel"; text = "Restaurant Name"; ObjectID = "C9R-9W-qXq"; */
+"C9R-9W-qXq.text" = "Restaurant Navn";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "CCh-ez-PEB"; */
+"CCh-ez-PEB.text" = "BrugerNavn";
+
+/* Class = "UITextField"; placeholder = "Enter Otp"; ObjectID = "CEj-ON-nvE"; */
+"CEj-ON-nvE.placeholder" = "Indtast otp kode";
+
+/* Class = "UILabel"; text = "SAR 0"; ObjectID = "CEq-xb-gQZ"; */
+"CEq-xb-gQZ.text" = "SAR 0";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "CKi-OX-ksZ"; */
+"CKi-OX-ksZ.normalTitle" = "LOG På";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "CR5-0n-6FJ"; */
+"CR5-0n-6FJ.normalTitle" = "Log Ud";
+
+/* Class = "UILabel"; text = "Product Name:"; ObjectID = "CX0-wO-sP8"; */
+"CX0-wO-sP8.text" = "Produkt Navn:";
+
+/* Class = "UIButton"; normalTitle = "Date"; ObjectID = "CjZ-IA-K9h"; */
+"CjZ-IA-K9h.normalTitle" = "Dato";
+
+/* Class = "UIButton"; normalTitle = "30 min"; ObjectID = "Cpi-ZU-I9h"; */
+"Cpi-ZU-I9h.normalTitle" = "30 min";
+
+/* Class = "UILabel"; text = "Address Bar"; ObjectID = "D0T-BB-qyI"; */
+"D0T-BB-qyI.text" = "Adresse Felt";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "DDA-37-qtV"; */
+"DDA-37-qtV.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "DLP-FM-2uO"; */
+"DLP-FM-2uO.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "lorem ipsum"; ObjectID = "DS5-Zf-9vx"; */
+"DS5-Zf-9vx.text" = "lorem ipsum";
+
+/* Class = "UIButton"; normalTitle = "User"; ObjectID = "EFe-08-wIo"; */
+"EFe-08-wIo.normalTitle" = "Bruger";
+
+/* Class = "UIButton"; normalTitle = "Cash"; ObjectID = "EmC-H9-Wdg"; */
+"EmC-H9-Wdg.normalTitle" = "Betale i butik";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "Epv-1b-bLa"; */
+"Epv-1b-bLa.text" = "Total beløb";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "Eqc-Lo-GOV"; */
+"Eqc-Lo-GOV.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "F4d-Oj-A7b"; */
+"F4d-Oj-A7b.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "FRD-m7-4zV"; */
+"FRD-m7-4zV.text" = "Adgangskode";
+
+/* Class = "UILabel"; text = "This items price will up"; ObjectID = "FlM-VR-mae"; */
+"FlM-VR-mae.text" = "Ekstra tilbehør";
+
+/* Class = "UITextField"; placeholder = "Address type (Home, Office)"; ObjectID = "Ggg-mA-eZI"; */
+"Ggg-mA-eZI.placeholder" = "Adresse type (Hjem ,Kontor)";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "GwT-WW-bbm"; */
+"GwT-WW-bbm.text" = "1";
+
+/* Class = "UILabel"; text = "Total Cart"; ObjectID = "H2f-14-vzQ"; */
+"H2f-14-vzQ.text" = "Total Indkøbskurv";
+
+/* Class = "UILabel"; text = "Choose 1:"; ObjectID = "H5N-3n-1j5"; */
+"H5N-3n-1j5.text" = "Vælg Tilbehør 1:";
+
+/* Class = "UILabel"; text = "Order By:"; ObjectID = "HYn-e2-eRg"; */
+"HYn-e2-eRg.text" = "Ordre af:";
+
+/* Class = "UILabel"; text = "Remaining 0 min 0 sec"; ObjectID = "HZl-Jk-N1r"; */
+"HZl-Jk-N1r.text" = "Tilbage  min 0 sec";
+
+/* Class = "UILabel"; text = "This Month Earning"; ObjectID = "Hcy-s5-xDn"; */
+"Hcy-s5-xDn.text" = "Denne måneds indtjening";
+
+/* Class = "UILabel"; text = "$80"; ObjectID = "ItG-u3-SMg"; */
+"ItG-u3-SMg.text" = "$80";
+
+/* Class = "UIButton"; normalTitle = "Pickup your self"; ObjectID = "Ixv-Dk-Bz9"; */
+"Ixv-Dk-Bz9.normalTitle" = "Afhenter selv";
+
+/* Class = "UILabel"; text = "Paid"; ObjectID = "IzI-Hk-GW2"; */
+"IzI-Hk-GW2.text" = "Betalt";
+
+/* Class = "UILabel"; text = "00 Kr"; ObjectID = "JIC-Vv-ErA"; */
+"JIC-Vv-ErA.text" = "00 Kr";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "JmS-7R-ofc"; */
+"JmS-7R-ofc.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UILabel"; text = "Product Name:"; ObjectID = "Jn6-tC-hVY"; */
+"Jn6-tC-hVY.text" = "Produkt Navn:";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "K7k-D5-BQK"; */
+"K7k-D5-BQK.normalTitle" = "Annullere";
+
+/* Class = "UILabel"; text = "Enter restaurant code"; ObjectID = "KD5-KS-WZt"; */
+"KD5-KS-WZt.text" = "Indtast restaurant kode";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Kfr-r1-htk"; */
+"Kfr-r1-htk.text" = "Etiket";
+
+/* Class = "UILabel"; text = "Delivery Fee"; ObjectID = "Kl8-gq-EPa"; */
+"Kl8-gq-EPa.text" = "Levering";
+
+/* Class = "UILabel"; text = "$000"; ObjectID = "Kla-qQ-1tr"; */
+"Kla-qQ-1tr.text" = "$000";
+
+/* Class = "UILabel"; text = "Order Id: 1"; ObjectID = "Kms-1f-x4U"; */
+"Kms-1f-x4U.text" = "Ordre Id: 1";
+
+/* Class = "UILabel"; text = "Create an account as"; ObjectID = "Krf-Bt-hx8"; */
+"Krf-Bt-hx8.text" = " Opret en konto som ";
+
+/* Class = "UILabel"; text = "00 Kr"; ObjectID = "Kww-Mg-VLd"; */
+"Kww-Mg-VLd.text" = "00 Kr";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "L9y-XE-wIR"; */
+"L9y-XE-wIR.normalTitle" = "Glemt adgangskode?";
+
+/* Class = "UILabel"; text = "ITEMS"; ObjectID = "LJw-eE-5AR"; */
+"LJw-eE-5AR.text" = "Varer";
+
+/* Class = "UITextField"; placeholder = "Enter bank name"; ObjectID = "Lfu-YS-uli"; */
+"Lfu-YS-uli.placeholder" = "Indtast bank navn";
+
+/* Class = "UIButton"; normalTitle = "45 min"; ObjectID = "MGg-x0-T2B"; */
+"MGg-x0-T2B.normalTitle" = "45 min";
+
+/* Class = "UILabel"; text = "Order Id: 1"; ObjectID = "MLv-mr-WZL"; */
+"MLv-mr-WZL.text" = "Ordre Id: 1";
+
+/* Class = "UILabel"; text = "Order Id: 1"; ObjectID = "MRQ-9p-SHD"; */
+"MRQ-9p-SHD.text" = "Ordre Id: 1";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "Mne-hN-YhV"; */
+"Mne-hN-YhV.text" = "Total beløb";
+
+/* Class = "UIButton"; normalTitle = "Call"; ObjectID = "NII-WG-8jI"; */
+"NII-WG-8jI.normalTitle" = "Kald";
+
+/* Class = "UILabel"; text = " 0.00"; ObjectID = "NOi-CD-Wbh"; */
+"NOi-CD-Wbh.text" = " 0.00";
+
+/* Class = "UIButton"; normalTitle = "Send Request"; ObjectID = "NTw-js-fHB"; */
+"NTw-js-fHB.normalTitle" = "Send Anmodning";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "NVk-M7-JoF"; */
+"NVk-M7-JoF.text" = "0";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "NhM-VQ-UgT"; */
+"NhM-VQ-UgT.text" = "0.kr";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "NnT-ZQ-pGG"; */
+"NnT-ZQ-pGG.text" = "0";
+
+/* Class = "UILabel"; text = "Open Time"; ObjectID = "Nyt-34-Qb9"; */
+"Nyt-34-Qb9.text" = "Åbningstider";
+
+/* Class = "UILabel"; text = "$80"; ObjectID = "O6a-ss-UWM"; */
+"O6a-ss-UWM.text" = "80.0 Kr.";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "ODe-1N-4fv"; */
+"ODe-1N-4fv.normalTitle" = "Indsend ";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "OSH-tU-hac"; */
+"OSH-tU-hac.normalTitle" = "Gem";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "OUS-0V-Ee2"; */
+"OUS-0V-Ee2.text" = "BrugerNavn";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "OYV-8g-HQu"; */
+"OYV-8g-HQu.placeholder" = "Godkend adgangskoden";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "PFK-EF-2Xd"; */
+"PFK-EF-2Xd.text" = "Email";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PeF-pY-qWz"; */
+"PeF-pY-qWz.text" = "Etiket";
+
+/* Class = "UILabel"; text = "Today Earning"; ObjectID = "PgW-8d-Ujg"; */
+"PgW-8d-Ujg.text" = "Dagens indtjening";
+
+/* Class = "UILabel"; text = "Sayaji Kebab Villas"; ObjectID = "Q2P-MH-aCN"; */
+"Q2P-MH-aCN.text" = "Sayaji Kebab Villas";
+
+/* Class = "UILabel"; text = "Tax Number"; ObjectID = "Q50-0f-ojj"; */
+"Q50-0f-ojj.text" = "CVR nr ";
+
+/* Class = "UIButton"; normalTitle = "User"; ObjectID = "R1j-hM-cMP"; */
+"R1j-hM-cMP.normalTitle" = "Bruger";
+
+/* Class = "UILabel"; text = "Current Available Amount"; ObjectID = "RPw-Sd-beh"; */
+"RPw-Sd-beh.text" = "Tilgængelig beløb";
+
+/* Class = "UILabel"; text = "Subtotal"; ObjectID = "RZX-Jl-eRx"; */
+"RZX-Jl-eRx.text" = "Subtotal";
+
+/* Class = "UILabel"; text = "Tax Number CVR 123456789"; ObjectID = "Re6-7D-555"; */
+"Re6-7D-555.text" = "CVR nr 123456789";
+
+/* Class = "UILabel"; text = "Product Detail:"; ObjectID = "Rv4-Ok-Wer"; */
+"Rv4-Ok-Wer.text" = "Produkt Detaljer:";
+
+/* Class = "UIButton"; normalTitle = "Load More"; ObjectID = "Rvg-ce-BYC"; */
+"Rvg-ce-BYC.normalTitle" = "Indlæs mere";
+
+/* Class = "UILabel"; text = "Choose 3:"; ObjectID = "S9D-XP-6W1"; */
+"S9D-XP-6W1.text" = " Vælg Tilbehør 3:";
+
+/* Class = "UILabel"; text = "Current Available Amount"; ObjectID = "SB3-5z-HJB"; */
+"SB3-5z-HJB.text" = "Tilgængelig beløb";
+
+/* Class = "UILabel"; text = "Select restaurant open and close time"; ObjectID = "SXo-w0-hqK"; */
+"SXo-w0-hqK.text" = "Vælg restaurant åbning og lukketid";
+
+/* Class = "UILabel"; text = "Waiting for driver"; ObjectID = "SYi-b1-6La"; */
+"SYi-b1-6La.text" = "Venter på Driver";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "Sbh-Ly-FPc"; */
+"Sbh-Ly-FPc.placeholder" = "Fornavn";
+
+/* Class = "UILabel"; text = "This Year Earning"; ObjectID = "T4G-aH-9Wx"; */
+"T4G-aH-9Wx.text" = "Års indtjening";
+
+/* Class = "UILabel"; text = "Total Amount (Incl. Vat)"; ObjectID = "T5P-g5-i9c"; */
+"T5P-g5-i9c.text" = "Total beløb (Inkl.moms.)";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "TJh-gS-UsY"; */
+"TJh-gS-UsY.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UITextField"; placeholder = "Enter Tax Number"; ObjectID = "TQw-2y-8wK"; */
+"TQw-2y-8wK.placeholder" = "Indtast Cvr nr.";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "TSt-bn-AQ0"; */
+"TSt-bn-AQ0.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "UC2-sH-G7K"; */
+"UC2-sH-G7K.text" = "Rabat";
+
+/* Class = "UILabel"; text = "Smith Jhones"; ObjectID = "UQY-Cv-VXL"; */
+"UQY-Cv-VXL.text" = "Smith Jhones";
+
+/* Class = "UILabel"; text = "Write something about your restaurant"; ObjectID = "UTK-so-HmN"; */
+"UTK-so-HmN.text" = "Skriv noget om din restaurant";
+
+/* Class = "UILabel"; text = "Indore, Madhya Pradesh"; ObjectID = "UYb-6v-LQZ"; */
+"UYb-6v-LQZ.text" = "Indore, Madhya Pradesh";
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "UYz-7Z-kGO"; */
+"UYz-7Z-kGO.text" = "Test vare";
+
+/* Class = "UIButton"; normalTitle = "Card"; ObjectID = "UZJ-HI-PU1"; */
+"UZJ-HI-PU1.normalTitle" = "Betalingskort";
+
+/* Class = "UILabel"; text = "Choose"; ObjectID = "UgT-zc-Llj"; */
+"UgT-zc-Llj.text" = "Vælg";
+
+/* Class = "UILabel"; text = "Pay By"; ObjectID = "Upu-bD-A2I"; */
+"Upu-bD-A2I.text" = "Betalt med";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "Ut4-HP-DkD"; */
+"Ut4-HP-DkD.normalTitle" = "Indsend";
+
+/* Class = "UILabel"; text = "Search food by category"; ObjectID = "Vrs-Tc-VV1"; */
+"Vrs-Tc-VV1.text" =  "Søg efter kategori";
+
+/* Class = "UITextField"; placeholder = "Old Password"; ObjectID = "WDL-qk-LFY"; */
+"WDL-qk-LFY.placeholder" = "Gammel adgangskode";
+
+/* Class = "UILabel"; text = "Enter OTP"; ObjectID = "WVG-9u-aPF"; */
+"WVG-9u-aPF.text" = "Indtast otp kode";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "Wc4-W0-xdf"; */
+"Wc4-W0-xdf.text" = "Rabat";
+
+/* Class = "UIButton"; normalTitle = "Menu"; ObjectID = "WqT-hO-G3b"; */
+"WqT-hO-G3b.normalTitle" = "Menu";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "X7X-Uh-pDr"; */
+"X7X-Uh-pDr.text" = "Bruger Navn";
+
+/* Class = "UILabel"; text = "Select Restaurant Location"; ObjectID = "XDP-G1-KQP"; */
+"XDP-G1-KQP.text" = "Vælg Restaurant Beliggenhed";
+
+/* Class = "UILabel"; text = "$000"; ObjectID = "XQz-eo-pb2"; */
+"XQz-eo-pb2.text" = "$000";
+
+/* Class = "UIButton"; normalTitle = "Submit Order"; ObjectID = "XVh-Xn-GQG"; */
+"XVh-Xn-GQG.normalTitle" = "Indsend Ordre";
+
+/* Class = "UILabel"; text = "New Orders"; ObjectID = "Y0F-gx-2AF"; */
+"Y0F-gx-2AF.text" = "Nye Ordrer";
+
+/* Class = "UILabel"; text = "Forgot Password?"; ObjectID = "YAc-B9-mch"; */
+"YAc-B9-mch.text" = "Glemtadg angskode?";
+
+/* Class = "UILabel"; text = "This week Earning"; ObjectID = "YM0-93-52l"; */
+"YM0-93-52l.text" = "Denne uges indtjening";
+
+/* Class = "UIButton"; normalTitle = "ADD TO CART"; ObjectID = "Ybl-bA-T8d"; */
+"Ybl-bA-T8d.normalTitle" = "Læg I kurv";
+
+/* Class = "UIButton"; normalTitle = "Withdraw Wallet Amount"; ObjectID = "Z3g-MO-GKX"; */
+"Z3g-MO-GKX.normalTitle" = "Hæv beløb ";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "ZOS-pE-ypB"; */
+"ZOS-pE-ypB.text" = "Telefon.";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "Zhh-ga-cCR"; */
+"Zhh-ga-cCR.text" = "Total beløb";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "aBA-EY-egC"; */
+"aBA-EY-egC.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Add your restaurant details"; ObjectID = "aKh-pp-UbE"; */
+"aKh-pp-UbE.text" = "Tilføj dine restaurant’s detaljer";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "aPV-tN-MVn"; */
+"aPV-tN-MVn.text" = "1";
+
+/* Class = "UILabel"; text = "88894 00093"; ObjectID = "aca-Ay-0VY"; */
+"aca-Ay-0VY.text" = "88894 00093";
+
+/* Class = "UIButton"; normalTitle = "Opent Orders"; ObjectID = "av6-Ou-Ge6"; */
+"av6-Ou-Ge6.normalTitle" = "Åbne Ordre";
+
+/* Class = "UILabel"; text = "Indore, Madhya Pradesh"; ObjectID = "awL-TV-ELs"; */
+"awL-TV-ELs.text" = "Indore, Madhya Pradesh";
+
+/* Class = "UITextField"; placeholder = "Enter IFSC Code"; ObjectID = "azU-K3-tuW"; */
+"azU-K3-tuW.placeholder" = "Indtast IFSC kode";
+
+/* Class = "UILabel"; text = "Kr 90.0"; ObjectID = "bQK-Ph-xKn"; */
+"bQK-Ph-xKn.text" = " 90.0 kr.";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "bgj-kA-H4g"; */
+"bgj-kA-H4g.text" = "1";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "byd-vo-z6m"; */
+"byd-vo-z6m.normalTitle" = "-";
+
+/* Class = "UILabel"; text = "1 x Capri, 2 x Salad"; ObjectID = "c5r-qN-2jh"; */
+"c5r-qN-2jh.text" = "1 x Capri, 2 x Salad";
+
+/* Class = "UITextView"; text = "Search Location"; ObjectID = "cF6-om-Zmk"; */
+"cF6-om-Zmk.text" = "Søg beliggenhed";
+
+/* Class = "UILabel"; text = "lorem ipsum"; ObjectID = "cJy-42-eaI"; */
+"cJy-42-eaI.text" = "lorem ipsum";
+
+/* Class = "UILabel"; text = "Thank you"; ObjectID = "cXQ-VN-1Nf"; */
+"cXQ-VN-1Nf.text" = "Mange Tak";
+
+/* Class = "UILabel"; text = "First Name"; ObjectID = "cte-UG-Ry2"; */
+"cte-UG-Ry2.text" = "Fornavn";
+
+/* Class = "UILabel"; text = "Detail:"; ObjectID = "czd-Ft-b84"; */
+"czd-Ft-b84.text" = "Detaljer:";
+
+/* Class = "UILabel"; text = "ITEMS"; ObjectID = "d2a-D7-icf"; */
+"d2a-D7-icf.text" = "Varer";
+
+/* Class = "UILabel"; text = "0.00 Kr"; ObjectID = "dwA-9h-O1S"; */
+"dwA-9h-O1S.text" = "0.00 Kr";
+
+/* Class = "UIButton"; normalTitle = "Driver"; ObjectID = "dxD-IR-RBn"; */
+"dxD-IR-RBn.normalTitle" = "Driver";
+
+/* Class = "UILabel"; text = "Restaurant Name"; ObjectID = "e55-FX-1nK"; */
+"e55-FX-1nK.text" = "Restaurant Navn";
+
+/* Class = "UITextView"; text = "For continue you need to accept Terms and Conditions"; ObjectID = "eLC-Hv-bZG"; */
+"eLC-Hv-bZG.text" = "For at fortsætte skal du acceptere vilkår og betingelser";
+
+/* Class = "UILabel"; text = "Product Price:"; ObjectID = "eZe-hy-6IF"; */
+"eZe-hy-6IF.text" = "Produkt Pris:";
+
+/* Class = "UILabel"; text = "Waiting for driver"; ObjectID = "eeZ-0l-GuX"; */
+"eeZ-0l-GuX.text" = "Venter for driver";
+
+/* Class = "UILabel"; text = "Choose 2:"; ObjectID = "eko-u6-3OR"; */
+"eko-u6-3OR.text" = "Vælg Tilbehør 2:";
+
+/* Class = "UILabel"; text = "Online"; ObjectID = "erR-lx-Db7"; */
+"erR-lx-Db7.text" = "Online";
+
+/* Class = "UIButton"; normalTitle = "Past Orders"; ObjectID = "f9v-mX-vfp"; */
+"f9v-mX-vfp.normalTitle" = "Tidligere Ordrer";
+
+/* Class = "UIButton"; normalTitle = "Change Password"; ObjectID = "fGP-nv-G6n"; */
+"fGP-nv-G6n.normalTitle" = "Skift adgangskode";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "fM7-dl-elS"; */
+"fM7-dl-elS.text" = "Adgangskode";
+
+/* Class = "UILabel"; text = "Subtotal"; ObjectID = "fR2-xK-I3f"; */
+"fR2-xK-I3f.text" = "Subtotal";
+
+/* Class = "UILabel"; text = "Delivery Fee"; ObjectID = "fTw-Vt-K7x"; */
+"fTw-Vt-K7x.text" = "Levering";
+
+/* Class = "UITextField"; placeholder = "Enter account number"; ObjectID = "fzJ-4d-REP"; */
+"fzJ-4d-REP.placeholder" = "Indtast konto nr. ";
+
+/* Class = "UILabel"; text = "User (Customer Information)"; ObjectID = "g7Q-jI-QwZ"; */
+"g7Q-jI-QwZ.text" = "Bruger (kunde Information)";
+
+/* Class = "UIButton"; normalTitle = "ORDER NOW"; ObjectID = "g7a-tf-Voy"; */
+"g7a-tf-Voy.normalTitle" = "Bestil nu";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "gIB-c3-plC"; */
+"gIB-c3-plC.text" = "Telefon nummer";
+
+/* Class = "UIButton"; normalTitle = "Accept"; ObjectID = "gfV-jy-Zri"; */
+"gfV-jy-Zri.normalTitle" = "Acceptere";
+
+/* Class = "UILabel"; text = "00 Kr"; ObjectID = "gff-N2-17n"; */
+"gff-N2-17n.text" = "00 Kr";
+
+/* Class = "UIButton"; normalTitle = "1 hour"; ObjectID = "ggl-zN-L7q"; */
+"ggl-zN-L7q.normalTitle" = "1 time";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "gj2-Hc-htX"; */
+"gj2-Hc-htX.normalTitle" = "Log på";
+
+/* Class = "UILabel"; text = "Lebenese kebab speciality"; ObjectID = "goT-rS-LcP"; */
+"goT-rS-LcP.text" = "Lebenese kebab speciality";
+
+/* Class = "UIButton"; normalTitle = "Current Orders"; ObjectID = "gvl-vP-jVT"; */
+"gvl-vP-jVT.normalTitle" = "Nuværende Ordre ";
+
+/* Class = "UILabel"; text = "Pay By"; ObjectID = "h2W-5K-MO9"; */
+"h2W-5K-MO9.text" = "Betal med.";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "h6u-jM-y25"; */
+"h6u-jM-y25.normalTitle" = "Bekræft";
+
+/* Class = "UILabel"; text = "Assigned Driver:"; ObjectID = "h9r-Mf-976"; */
+"h9r-Mf-976.text" = "Tilmeldt Driver";
+
+/* Class = "UILabel"; text = "0000:00:00 00:00:00"; ObjectID = "hAL-hZ-3gr"; */
+"hAL-hZ-3gr.text" = " 00:00:00  00:00:0000";
+
+/* Class = "UILabel"; text = "Sizes:"; ObjectID = "hNY-zg-sir"; */
+"hNY-zg-sir.text" = "Størrelse:";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "hZ3-Mw-SPk"; */
+"hZ3-Mw-SPk.placeholder" = "Telefon Nummer";
+
+/* Class = "UILabel"; text = "$000"; ObjectID = "hk1-yk-IXq"; */
+"hk1-yk-IXq.text" = "$000";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "iG7-0K-Ots"; */
+"iG7-0K-Ots.normalTitle" = "Indsend";
+
+/* Class = "UILabel"; text = "0.00 Kr"; ObjectID = "iJs-eJ-hse"; */
+"iJs-eJ-hse.text" = "0.00 Kr";
+
+/* Class = "UILabel"; text = "Total Amount"; ObjectID = "iXS-ze-DSF"; */
+"iXS-ze-DSF.text" = "Total beløb";
+
+/* Class = "UILabel"; text = "Wallet Balance"; ObjectID = "j8n-Oq-YTO"; */
+"j8n-Oq-YTO.text" = "Konto saldo";
+
+/* Class = "UILabel"; text = "Add Restaurant Cover Image"; ObjectID = "jAu-Ti-K39"; */
+"jAu-Ti-K39.text" = "Tilføj Restaurant Cover billede";
+
+/* Class = "UILabel"; text = "Select Location"; ObjectID = "jXa-Ja-vA6"; */
+"jXa-Ja-vA6.text" = "Vælg beliggenhed";
+
+/* Class = "UILabel"; text = "Delivery Fee"; ObjectID = "juc-oj-bf8"; */
+"juc-oj-bf8.text" = "Levering";
+
+/* Class = "UILabel"; text = "Add Restaurant Image"; ObjectID = "k2m-xj-Bwg"; */
+"k2m-xj-Bwg.text" = "Tilføj Restaurant billede";
+
+/* Class = "UILabel"; text = "Phone: "; ObjectID = "kLR-Jx-1ih"; */
+"kLR-Jx-1ih.text" = "Telefon: ";
+
+/* Class = "UILabel"; text = "Name: "; ObjectID = "ki7-DC-Ruk"; */
+"ki7-DC-Ruk.text" = "Navn: ";
+
+/* Class = "UILabel"; text = "Grand Earning:"; ObjectID = "ko0-6h-pcN"; */
+"ko0-6h-pcN.text" = "Indtjening:";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "kyR-PM-nrN"; */
+"kyR-PM-nrN.text" = "1";
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "l2z-rF-9W7"; */
+"l2z-rF-9W7.text" = "Test vare";
+
+/* Class = "UILabel"; text = "00 Kr"; ObjectID = "lAc-Gn-L7m"; */
+"lAc-Gn-L7m.text" = "00 Kr";
+
+/* Class = "UILabel"; text = "Choose 4:"; ObjectID = "lI4-af-JvO"; */
+"lI4-af-JvO.text" = "Vælg Tilbehør 4:";
+
+/* Class = "UILabel"; text = "2021-04-20 07:08:15"; ObjectID = "mR2-9W-V90"; */
+"mR2-9W-V90.text" = " 07:08:15  20-04-2021";
+
+/* Class = "UILabel"; text = "Select Time"; ObjectID = "mpf-eU-e08"; */
+"mpf-eU-e08.text" = "Vælg Tid";
+
+/* Class = "UILabel"; text = "Current Available Amount"; ObjectID = "nMQ-wA-xgw"; */
+"nMQ-wA-xgw.text" = "Tilgængelig beløb";
+
+/* Class = "UILabel"; text = "00 Kr"; ObjectID = "nVt-C1-Z2c"; */
+"nVt-C1-Z2c.text" = "00 Kr";
+
+/* Class = "UIButton"; normalTitle = "Load More"; ObjectID = "nbI-xW-XKx"; */
+"nbI-xW-XKx.normalTitle" = "Indlæs mere";
+
+/* Class = "UIButton"; normalTitle = "Delivery"; ObjectID = "o2e-BA-3oH"; */
+"o2e-BA-3oH.normalTitle" = "Levering";
+
+/* Class = "UILabel"; text = "Current Available Amount"; ObjectID = "oSK-hP-EvJ"; */
+"oSK-hP-EvJ.text" = "Tilgængelig beløb";
+
+/* Class = "UIButton"; normalTitle = "Reviews"; ObjectID = "ohu-j2-yVG"; */
+"ohu-j2-yVG.normalTitle" = "Anmeldelser";
+
+/* Class = "UILabel"; text = "Address:"; ObjectID = "pXK-vM-wzH"; */
+"pXK-vM-wzH.text" = "Adresse:";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "paD-fm-mmg"; */
+"paD-fm-mmg.normalTitle" = "Log ud";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "paE-Td-ocN"; */
+"paE-Td-ocN.normalTitle" = "Gem";
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "q29-Yb-yAD"; */
+"q29-Yb-yAD.text" = "Test vare";
+
+/* Class = "UILabel"; text = "Open"; ObjectID = "qLl-I6-tIN"; */
+"qLl-I6-tIN.text" = "Åben";
+
+/* Class = "UILabel"; text = "Select Order Ready Time"; ObjectID = "qWB-ZN-nqw"; */
+"qWB-ZN-nqw.text" = "Vælg ordre klar tidspunkt.";
+
+/* Class = "UIButton"; normalTitle = "Driver"; ObjectID = "qXP-Yv-Tta"; */
+"qXP-Yv-Tta.normalTitle" = "Driver";
+
+/* Class = "UILabel"; text = "Smith Jhones"; ObjectID = "qgK-W8-QZf"; */
+"qgK-W8-QZf.text" = "Smith Jhones";
+
+/* Class = "UIButton"; normalTitle = "Past Orders"; ObjectID = "qkm-ST-eQU"; */
+"qkm-ST-eQU.normalTitle" = "Tidligere Ordrer";
+
+/* Class = "UILabel"; text = "88894 00093"; ObjectID = "qpe-OV-cB5"; */
+"qpe-OV-cB5.text" = "88894 00093";
+
+/* Class = "UILabel"; text = "ITEMS"; ObjectID = "qvd-3I-Nhy"; */
+"qvd-3I-Nhy.text" = "Varer";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "rAm-OO-pho"; */
+"rAm-OO-pho.text" = "1";
+
+/* Class = "UIButton"; normalTitle = "Past Orders"; ObjectID = "rC8-Hc-Nmk"; */
+"rC8-Hc-Nmk.normalTitle" = "Tidligere Ordrer";
+
+/* Class = "UILabel"; text = "Sizes:"; ObjectID = "rQ3-1z-Tn8"; */
+"rQ3-1z-Tn8.text" = "Størrelse:";
+
+/* Class = "UIButton"; normalTitle = "Restaurant"; ObjectID = "rRe-5i-5ce"; */
+"rRe-5i-5ce.normalTitle" = "Restaurant";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "sWt-3r-ypf"; */
+"sWt-3r-ypf.placeholder" = "Adgangskode";
+
+/* Class = "UILabel"; text = "25 SAR"; ObjectID = "sq4-kE-7IX"; */
+"sq4-kE-7IX.text" = "25 SAR";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "tUJ-l5-F6e"; */
+"tUJ-l5-F6e.placeholder" = "Ny adgangskode";
+
+/* Class = "UILabel"; text = "Total Cart"; ObjectID = "tXp-Ws-kCY"; */
+"tXp-Ws-kCY.text" = " Total indkøbskurv";
+
+/* Class = "UIButton"; normalTitle = "Time"; ObjectID = "ta7-a2-beQ"; */
+"ta7-a2-beQ.normalTitle" = "Tid";
+
+/* Class = "UILabel"; text = "Subtotal"; ObjectID = "urg-O5-HXy"; */
+"urg-O5-HXy.text" = "Subtotal";
+
+/* Class = "UILabel"; text = "Total Cart"; ObjectID = "vP6-Ry-gCh"; */
+"vP6-Ry-gCh.text" = "Total Indkøbskur";
+
+/* Class = "UILabel"; text = "25 SAR"; ObjectID = "vUQ-OC-E8g"; */
+"vUQ-OC-E8g.text" = "25 SAR";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "vcA-V3-ke1"; */
+"vcA-V3-ke1.text" = "Rabat";
+
+/* Class = "UILabel"; text = "Current Available Amount"; ObjectID = "w6G-3o-X8V"; */
+"w6G-3o-X8V.text" = "Tilgængelig beløb";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "wGS-84-E6z"; */
+"wGS-84-E6z.normalTitle" = "Log ud";
+
+/* Class = "UILabel"; text = "Delivery Time:"; ObjectID = "wK3-aF-Dg5"; */
+"wK3-aF-Dg5.text" = "Leverings Tidspunkt:";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "wRz-hb-QnK"; */
+"wRz-hb-QnK.normalTitle" = "Opret konto";
+
+/* Class = "UITextView"; text = "Enter Your Comments"; ObjectID = "wav-tl-dXA"; */
+"wav-tl-dXA.text" = "Indtast din kommentar";
+
+/* Class = "UIButton"; normalTitle = "Change Password"; ObjectID = "wiW-UB-9sz"; */
+"wiW-UB-9sz.normalTitle" = "Skift adgangskode";
+
+/* Class = "UIButton"; normalTitle = "15 min"; ObjectID = "wnD-jJ-eJa"; */
+"wnD-jJ-eJa.normalTitle" = "15 min";
+
+/* Class = "UILabel"; text = "1 x ABC"; ObjectID = "woH-m7-xHl"; */
+"woH-m7-xHl.text" = "1 x ABC";
+
+/* Class = "UILabel"; text = "This items included in item price"; ObjectID = "xBi-hU-Pbk"; */
+"xBi-hU-Pbk.text" = "Valgfrit";
+
+/* Class = "UIButton"; normalTitle = "Restaurant"; ObjectID = "xGd-yM-amH"; */
+"xGd-yM-amH.normalTitle" = "Restaurant";
+
+/* Class = "UILabel"; text = "SAR 0.00"; ObjectID = "xTh-eR-yCo"; */
+"xTh-eR-yCo.text" = "SAR 0.00";
+
+/* Class = "UIButton"; normalTitle = "DONE"; ObjectID = "xi5-aI-6ix"; */
+"xi5-aI-6ix.normalTitle" = "Færdig";
+
+/* Class = "UILabel"; text = "2021-04-20 07:08:15"; ObjectID = "xjU-rv-Tda"; */
+"xjU-rv-Tda.text" = "07:08:15 20-04-2021";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "yOJ-nU-mPr"; */
+"yOJ-nU-mPr.placeholder" = "Efternavn";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "yRR-0L-r6j"; */
+"yRR-0L-r6j.placeholder" = "Telefon";
+
+/* Class = "UITextField"; placeholder = "Enter Withdraw Amount"; ObjectID = "yo9-bD-Fq1"; */
+"yo9-bD-Fq1.placeholder" = "Indtast hæve beløb";
+
+/* Class = "UILabel"; text = "Delivery Fee"; ObjectID = "yri-0A-Hhi"; */
+"yri-0A-Hhi.text" = "Levering";
+
+/* Class = "UILabel"; text = "Total Amount (Incl. VAT)"; ObjectID = "zGa-t6-aFZ"; */
+"zGa-t6-aFZ.text" = "Total beløb (Inkl.moms.)";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "zUA-A3-jon"; */
+"zUA-A3-jon.placeholder" = "Adgangskode";
+
+/* Class = "UILabel"; text = "2021-04-20 07:08:15"; ObjectID = "TJI-F3-g2v"; */
+"TJI-F3-g2v.text" = "Vælg venligst sproget";
+
+/* Class = "UIButton"; normalTitle = "DONE"; ObjectID = "xi5-aI-6ix"; */
+"b6O-5b-SMW.normalTitle" = "engelsk";
+
+/* Class = "UIButton"; normalTitle = "DONE"; ObjectID = "xi5-aI-6ix"; */
+"S1f-Mm-o8H.normalTitle" = "dansk";
+
+"2ef-TU-gyu.text" = "Denne restaurant giver i øjeblikket ikke leveringsmulighed, så bestil kun, hvis du afhenter fra restauranten";
+
+"SuM-wy-aF4.normalTitle" = "Indtast virksomhedskode for at se menuen.";
+
+"aBl-GO-v3F.normalTitle" = "Tilmeld dig som bruger for at afgive en ordre";

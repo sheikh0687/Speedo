@@ -1,0 +1,66 @@
+
+/* Class = "UIButton"; normalTitle = "Item not available"; ObjectID = "8I3-Dv-bqZ"; */
+"8I3-Dv-bqZ.normalTitle" = "genstand ikke tilgængelig";
+
+/* Class = "UILabel"; text = "0.00 Kr"; ObjectID = "AQL-Ii-9Oa"; */
+"AQL-Ii-9Oa.text" = "0.00 Kr";
+
+/* Class = "UILabel"; text = "Delivery Fee"; ObjectID = "I3t-VP-bCE"; */
+"I3t-VP-bCE.text" = "Fragtomkostninger";
+
+/* Class = "UILabel"; text = "0.00 Kr"; ObjectID = "IIH-oW-P4t"; */
+"IIH-oW-P4t.text" = "0.00 Kr";
+
+/* Class = "UILabel"; text = "ITEMS"; ObjectID = "Juh-Wq-R4G"; */
+"Juh-Wq-R4G.text" = "ARTIKLER";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "N67-Lc-RnU"; */
+"N67-Lc-RnU.text" = "Total";
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "NTl-yl-rRr"; */
+"NTl-yl-rRr.text" = "Test Item";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "S6L-Sx-ZaG"; */
+"S6L-Sx-ZaG.text" = "Rabat";
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "TIL-e2-0cc"; */
+"TIL-e2-0cc.text" = "Test Item";
+
+/* Class = "UILabel"; text = "Preparing"; ObjectID = "WZw-Rd-zsa"; */
+"WZw-Rd-zsa.text" = "Forbereder";
+
+/* Class = "UIButton"; normalTitle = "Call Driver"; ObjectID = "aRp-5z-Sjs"; */
+"aRp-5z-Sjs.normalTitle" = "Ring til chauffør";
+
+/* Class = "UILabel"; text = "0.00 Kr"; ObjectID = "dNB-Zd-6pl"; */
+"dNB-Zd-6pl.text" = "0.00 Kr";
+
+/* Class = "UIButton"; normalTitle = "Print"; ObjectID = "drz-HG-Goj"; */
+"drz-HG-Goj.normalTitle" = "Print";
+
+/* Class = "UILabel"; text = "Order Id: 1"; ObjectID = "dxd-vA-imv"; */
+"dxd-vA-imv.text" = "Order Id: 1";
+
+/* Class = "UIButton"; normalTitle = "Notify Ready"; ObjectID = "eRG-F9-PTk"; */
+"eRG-F9-PTk.normalTitle" = "Notify Ready";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "hjl-Gm-OvP"; */
+"hjl-Gm-OvP.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UIButton"; normalTitle = "Assigned Driver"; ObjectID = "mqG-Se-jDc"; */
+"mqG-Se-jDc.normalTitle" = "Tildelt driver";
+
+/* Class = "UIButton"; normalTitle = "Cancel Order"; ObjectID = "sBp-5K-9Rp"; */
+"sBp-5K-9Rp.normalTitle" = "Aflys ordre";
+
+/* Class = "UILabel"; text = "Subtotal"; ObjectID = "wSo-69-5AB"; */
+"wSo-69-5AB.text" = "Subtotal";
+
+/* Class = "UILabel"; text = "$10"; ObjectID = "wju-ZR-bhQ"; */
+"wju-ZR-bhQ.text" = "$10";
+
+/* Class = "UIButton"; normalTitle = "Take Order"; ObjectID = "xLe-z1-SsE"; */
+"xLe-z1-SsE.normalTitle" = "Tage ordre";
+
+/* Class = "UILabel"; text = "0.00 Kr"; ObjectID = "yAi-Cs-POt"; */
+"yAi-Cs-POt.text" = "0.00 Kr";

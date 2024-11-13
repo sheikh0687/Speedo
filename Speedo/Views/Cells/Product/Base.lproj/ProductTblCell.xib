@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProductTblCell" rowHeight="122" id="KGk-i7-Jjw" customClass="ProductTblCell" customModule="Speedo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zz8-AZ-bCa">
+                        <rect key="frame" x="8" y="6" width="304" height="110"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Test Item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbE-Be-c2O">
+                                <rect key="frame" x="8" y="8" width="180" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kebeb" translatesAutoresizingMaskIntoConstraints="NO" id="Jy0-5w-Tw9">
+                                <rect key="frame" x="236" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="NSH-Fb-PcH"/>
+                                    <constraint firstAttribute="height" constant="60" id="kTR-pu-P2h"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30B-jX-KGU">
+                                <rect key="frame" x="196" y="8" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Jcz-AG-mNz"/>
+                                    <constraint firstAttribute="height" constant="32" id="cLt-iG-gpM"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                <state key="normal" image="favoritefill"/>
+                                <connections>
+                                    <action selector="btnFavourite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nSX-Zq-6tp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Test Item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXV-1y-6Ed">
+                                <rect key="frame" x="8" y="42" width="180" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRz-Oe-Qwy">
+                                <rect key="frame" x="8" y="72.5" width="230" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvp-5w-cQp">
+                                <rect key="frame" x="246" y="53" width="40" height="30"/>
+                                <color key="backgroundColor" name="theme_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0SL-mY-njs"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ooa-Us-85r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                <state key="normal" title="ADD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAdd:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PnT-oq-BlI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VRz-Oe-Qwy" secondAttribute="bottom" constant="5.5" id="24H-4R-2fv"/>
+                            <constraint firstItem="IbE-Be-c2O" firstAttribute="top" secondItem="Zz8-AZ-bCa" secondAttribute="top" constant="8" id="3NM-nW-TAR"/>
+                            <constraint firstItem="30B-jX-KGU" firstAttribute="top" secondItem="Zz8-AZ-bCa" secondAttribute="top" constant="8" id="B6l-ge-sTB"/>
+                            <constraint firstItem="Jy0-5w-Tw9" firstAttribute="top" secondItem="Zz8-AZ-bCa" secondAttribute="top" constant="8" id="CUA-gc-Qmx"/>
+                            <constraint firstItem="Hvp-5w-cQp" firstAttribute="leading" secondItem="VRz-Oe-Qwy" secondAttribute="trailing" constant="8" id="Kyw-11-Ahc"/>
+                            <constraint firstItem="IbE-Be-c2O" firstAttribute="leading" secondItem="Zz8-AZ-bCa" secondAttribute="leading" constant="8" id="Qgy-Oy-e1X"/>
+                            <constraint firstItem="30B-jX-KGU" firstAttribute="leading" secondItem="HXV-1y-6Ed" secondAttribute="trailing" constant="8" id="VZ6-gb-qI7"/>
+                            <constraint firstItem="30B-jX-KGU" firstAttribute="leading" secondItem="IbE-Be-c2O" secondAttribute="trailing" constant="8" id="W2a-M5-azv"/>
+                            <constraint firstItem="VRz-Oe-Qwy" firstAttribute="top" secondItem="HXV-1y-6Ed" secondAttribute="bottom" constant="4" id="ZNM-ly-HGu"/>
+                            <constraint firstItem="Jy0-5w-Tw9" firstAttribute="leading" secondItem="30B-jX-KGU" secondAttribute="trailing" constant="8" id="c2p-Af-Dxj"/>
+                            <constraint firstItem="Hvp-5w-cQp" firstAttribute="bottom" secondItem="Jy0-5w-Tw9" secondAttribute="bottom" constant="15" id="gCF-Ek-hh8"/>
+                            <constraint firstItem="HXV-1y-6Ed" firstAttribute="leading" secondItem="Zz8-AZ-bCa" secondAttribute="leading" constant="8" id="iSz-vu-76K"/>
+                            <constraint firstItem="Hvp-5w-cQp" firstAttribute="centerX" secondItem="Jy0-5w-Tw9" secondAttribute="centerX" id="l9a-Ow-BXU"/>
+                            <constraint firstItem="VRz-Oe-Qwy" firstAttribute="leading" secondItem="Zz8-AZ-bCa" secondAttribute="leading" constant="8" id="noD-EF-GB5"/>
+                            <constraint firstAttribute="trailing" secondItem="Jy0-5w-Tw9" secondAttribute="trailing" constant="8" id="unb-z3-bZb"/>
+                            <constraint firstItem="HXV-1y-6Ed" firstAttribute="top" secondItem="IbE-Be-c2O" secondAttribute="bottom" constant="2" id="xxf-iE-Hdm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth1">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor1">
+                                <color key="value" systemColor="secondaryLabelColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zz8-AZ-bCa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="8IV-Uo-RHg"/>
+                    <constraint firstAttribute="trailing" secondItem="Zz8-AZ-bCa" secondAttribute="trailing" constant="8" id="Elb-E7-u62"/>
+                    <constraint firstAttribute="bottom" secondItem="Zz8-AZ-bCa" secondAttribute="bottom" constant="6" id="QJ2-sY-FmC"/>
+                    <constraint firstItem="Zz8-AZ-bCa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="sk3-q0-RYz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnFavouriteStatus" destination="30B-jX-KGU" id="zPh-u1-bqF"/>
+                <outlet property="imgProduct" destination="Jy0-5w-Tw9" id="X18-hn-g45"/>
+                <outlet property="lblProductDesc" destination="HXV-1y-6Ed" id="rFR-42-Jd2"/>
+                <outlet property="lblProductName" destination="IbE-Be-c2O" id="NQg-Ns-WxD"/>
+                <outlet property="lblProductPrice" destination="VRz-Oe-Qwy" id="6SG-1Q-rpW"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="82.366071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="favoritefill" width="64" height="64"/>
+        <image name="kebeb" width="620" height="350"/>
+        <namedColor name="theme_color">
+            <color red="0.85490196078431369" green="0.29411764705882354" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

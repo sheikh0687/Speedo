@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ExtraItemCell" rowHeight="133" id="KGk-i7-Jjw" customClass="ExtraItemCell" customModule="Speedo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dls-CU-vjL">
+                        <rect key="frame" x="8" y="8" width="186" height="117"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zd-pI-Jz1">
+                                <rect key="frame" x="0.0" y="7" width="186" height="24.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sq0-aP-IHU">
+                                <rect key="frame" x="0.0" y="46" width="186" height="24.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Sq0-aP-IHU" secondAttribute="bottom" constant="7" id="Lkq-bj-6BR"/>
+                            <constraint firstItem="7Zd-pI-Jz1" firstAttribute="top" secondItem="Dls-CU-vjL" secondAttribute="top" constant="7" id="Lwx-p6-Fug"/>
+                            <constraint firstItem="Sq0-aP-IHU" firstAttribute="top" secondItem="7Zd-pI-Jz1" secondAttribute="bottom" constant="0.10000000000000001" id="PTj-3g-BQg"/>
+                            <constraint firstItem="Sq0-aP-IHU" firstAttribute="leading" secondItem="Dls-CU-vjL" secondAttribute="leading" id="TEr-XS-UtN"/>
+                            <constraint firstItem="7Zd-pI-Jz1" firstAttribute="leading" secondItem="Dls-CU-vjL" secondAttribute="leading" id="W6s-tN-SK3"/>
+                            <constraint firstAttribute="trailing" secondItem="Sq0-aP-IHU" secondAttribute="trailing" id="vPL-NU-zzv"/>
+                            <constraint firstAttribute="trailing" secondItem="7Zd-pI-Jz1" secondAttribute="trailing" id="y1Y-fd-UfD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Dls-CU-vjL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ljW-GV-5gL"/>
+                    <constraint firstAttribute="bottom" secondItem="Dls-CU-vjL" secondAttribute="bottom" constant="8" id="nP6-kT-L4c"/>
+                    <constraint firstItem="Dls-CU-vjL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="u1u-qa-sZ4"/>
+                    <constraint firstAttribute="trailing" secondItem="Dls-CU-vjL" secondAttribute="trailing" constant="8" id="vnH-r2-7bk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblExtraItem" destination="Sq0-aP-IHU" id="Auv-dD-Aej"/>
+                <outlet property="lblItemName" destination="7Zd-pI-Jz1" id="HhU-Xg-9eF"/>
+            </connections>
+            <point key="canvasLocation" x="380.15267175572518" y="-11.619718309859156"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

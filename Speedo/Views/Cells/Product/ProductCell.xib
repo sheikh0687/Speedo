@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="gTV-IL-0wX" customClass="ProductCell" customModule="Speedo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IO-eJ-otb">
+                        <rect key="frame" x="8" y="4" width="356" height="116"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo0-M3-fvR">
+                                <rect key="frame" x="8" y="8" width="232" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kebeb" translatesAutoresizingMaskIntoConstraints="NO" id="0WO-OF-Oxj">
+                                <rect key="frame" x="288" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="DAW-Hn-IVr"/>
+                                    <constraint firstAttribute="height" constant="60" id="Stj-83-h1x"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyz-0g-6IW">
+                                <rect key="frame" x="248" y="8" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="bus-W5-FsA"/>
+                                    <constraint firstAttribute="width" constant="32" id="emb-pe-Nbj"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                <state key="normal" image="favoritefill"/>
+                                <connections>
+                                    <action selector="btnFavourite:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2O0-nn-8Bi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NO7-ns-V6Z">
+                                <rect key="frame" x="8" y="42" width="232" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yna-mo-SDV">
+                                <rect key="frame" x="8" y="72.5" width="282" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adz-dv-jnb">
+                                <rect key="frame" x="298" y="53" width="40" height="30"/>
+                                <color key="backgroundColor" name="theme_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pY3-ZI-z3o"/>
+                                    <constraint firstAttribute="width" constant="40" id="wDN-6s-86I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                <state key="normal" title="ADD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAdd:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Rp1-az-YKa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lo0-M3-fvR" firstAttribute="leading" secondItem="0IO-eJ-otb" secondAttribute="leading" constant="8" id="1cD-WN-LR7"/>
+                            <constraint firstItem="Uyz-0g-6IW" firstAttribute="top" secondItem="0IO-eJ-otb" secondAttribute="top" constant="8" id="1fp-0a-CGF"/>
+                            <constraint firstItem="yna-mo-SDV" firstAttribute="top" secondItem="NO7-ns-V6Z" secondAttribute="bottom" constant="4" id="4xf-sP-0tQ"/>
+                            <constraint firstItem="yna-mo-SDV" firstAttribute="leading" secondItem="0IO-eJ-otb" secondAttribute="leading" constant="8" id="5tQ-ls-tYM"/>
+                            <constraint firstItem="NO7-ns-V6Z" firstAttribute="top" secondItem="lo0-M3-fvR" secondAttribute="bottom" constant="2" id="DJT-BE-dUH"/>
+                            <constraint firstAttribute="trailing" secondItem="0WO-OF-Oxj" secondAttribute="trailing" constant="8" id="FDL-0R-J6R"/>
+                            <constraint firstItem="Uyz-0g-6IW" firstAttribute="leading" secondItem="lo0-M3-fvR" secondAttribute="trailing" constant="8" id="GXg-8i-evi"/>
+                            <constraint firstItem="lo0-M3-fvR" firstAttribute="top" secondItem="0IO-eJ-otb" secondAttribute="top" constant="8" id="KYi-dS-rxp"/>
+                            <constraint firstItem="0WO-OF-Oxj" firstAttribute="top" secondItem="0IO-eJ-otb" secondAttribute="top" constant="8" id="Q4s-ve-K2y"/>
+                            <constraint firstItem="Adz-dv-jnb" firstAttribute="centerX" secondItem="0WO-OF-Oxj" secondAttribute="centerX" id="SKa-UJ-e8H"/>
+                            <constraint firstAttribute="bottom" secondItem="yna-mo-SDV" secondAttribute="bottom" constant="11.5" id="Uym-lK-xDu"/>
+                            <constraint firstItem="Adz-dv-jnb" firstAttribute="leading" secondItem="yna-mo-SDV" secondAttribute="trailing" constant="8" id="YnK-Ta-2y0"/>
+                            <constraint firstItem="NO7-ns-V6Z" firstAttribute="leading" secondItem="0IO-eJ-otb" secondAttribute="leading" constant="8" id="gj1-vu-MBK"/>
+                            <constraint firstItem="0WO-OF-Oxj" firstAttribute="leading" secondItem="Uyz-0g-6IW" secondAttribute="trailing" constant="8" id="ksa-T1-FJ0"/>
+                            <constraint firstItem="Uyz-0g-6IW" firstAttribute="leading" secondItem="NO7-ns-V6Z" secondAttribute="trailing" constant="8" id="m31-0k-4Hz"/>
+                            <constraint firstItem="Adz-dv-jnb" firstAttribute="bottom" secondItem="0WO-OF-Oxj" secondAttribute="bottom" constant="15" id="rID-wI-ybb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth1">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor1">
+                                <color key="value" systemColor="secondaryLabelColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0IO-eJ-otb" secondAttribute="trailing" constant="8" id="0BV-en-VDC"/>
+                <constraint firstItem="0IO-eJ-otb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="NNO-m8-uRa"/>
+                <constraint firstItem="0IO-eJ-otb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="RKp-RQ-nqt"/>
+                <constraint firstAttribute="bottom" secondItem="0IO-eJ-otb" secondAttribute="bottom" constant="4" id="vsl-PN-oJs"/>
+            </constraints>
+            <size key="customSize" width="372" height="124"/>
+            <connections>
+                <outlet property="btnFavouriteStatus" destination="Uyz-0g-6IW" id="2le-hd-UC0"/>
+                <outlet property="imgProduct" destination="0WO-OF-Oxj" id="95r-tG-PZy"/>
+                <outlet property="lblProductDesc" destination="NO7-ns-V6Z" id="dhE-Hb-8iO"/>
+                <outlet property="lblProductName" destination="lo0-M3-fvR" id="gGh-qZ-44Q"/>
+                <outlet property="lblProductPrice" destination="yna-mo-SDV" id="nTf-3H-YyI"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="24.776785714285712"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="favoritefill" width="64" height="64"/>
+        <image name="kebeb" width="620" height="350"/>
+        <namedColor name="theme_color">
+            <color red="0.85490196078431369" green="0.29411764705882354" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,321 @@
+/* 
+  Localizable.strings
+  ServiceProvider
+
+  Created by mac on 16/03/20.
+  Copyright © 2020 mac. All rights reserved.
+*/
+
+"No Internet Connection. Make sure your device is connected to the internet." = "Ingen internetforbindelse.  Sørg for, at din enhed er forbundet til internettet.";
+
+"OK" = "OK";
+
+"Loading" = " Indlæser ";
+
+"Please Wait!!" = "Vent venligst!!";
+
+"Cancel" = "Afbryd";
+
+"DATE" = "Dato";
+
+"Done" = "Færdig";
+
+"Camera" = "Kamera";
+
+"Gallery" = "Galleri";
+
+"Yes" = "Ja";
+
+"No" = "Nej";
+
+"No data available to show" = " Der er ingen tilgængelige data at vise ";
+
+"Please enter full name" = " Indtast venligst fulde navn";
+
+"Please enter email address" = "Indtast venligst e-mail adresse";
+
+"Invalid email address" = "Ugyldig e-mailadresse";
+
+"Please enter password" = "Indtast venligst adgangskode";
+
+"Please enter confirm password" = " Indtast venligst adgangskoden bekræft ";
+
+"Password not matched" = "adgangskode matcher ikke";
+
+"Something went wrong" = "Noget gık galt";
+
+"Profile Update Successfully" = "Profil opdatering lykkedes ";
+
+"Are you sure you want to log out?" = "Er du sikker på, at du vil logge ud?";
+
+"Thank You..!! We'll be in touch shortly." = ". Tak skal du have..!!  Vi kontakter dig snart.";
+
+"Write some message" = " Skriv en besked ";
+
+"Thank you for registration..!!" = "Tak for tilmeldingen.!!";
+
+
+
+"Home" = "Hjem";
+
+"Edit Profile" = " Rediger profil";
+
+"Change Password" = "Skift adgangskode";
+
+"Change Language" = "Skift sprog";
+
+"My Chat" = "Min Chat";
+
+"About us" = "Om os";
+
+"Privacy Policy" = " Fortrolighedspolitik";
+
+"Terms and Condition" = " Vilkår og betingelser";
+
+"Choose Language" = "Vælg sprog";
+
+"Offers" = "Tilbud";
+
+"Share APP & Earn" = "Del APP & Tjen";
+
+"Orders" = "Ordre";
+
+"Rate this App" = "Bedøm denne. App";
+
+"Help & Support" = "Hjelp & Support";
+
+"Logout" = "Log ud";
+
+"Gift" = "Gave";
+
+"My Reviews" = "Mine anmeldelser";
+
+"My Wallet" = "Mit konto";
+
+"My Earning" = "Min indtjening";
+
+"You have entered wrong email or password" = "Du har indtastet forkert e-mail eller adgangskode";
+
+"Please check your email to reset" = "Tjek venligst din e-mail for at nulstille ";
+
+"Members" = "Medlemmer";
+
+"Password changed successfully" = " Adgangskoden blev ændret ";
+
+"Please enter message" = " Indtast venligst besked ";
+
+
+"Login" = "Log på";
+
+"Forgot Password" = "Glemt adgangskode";
+
+"Sign up" = "Opret konto";
+
+"My Profile" = "Min Profil";
+
+"Send message..." = "Send besked...";
+
+"Write here..." = "Indtast her..";
+
+"New password sent to your email." = " Ny adgangskode er sendt til din e-mail ";
+
+"please enter valid details" = " Indtast venligst gyldige detaljer ";
+
+"Cart deleted successfully" = " Indkøbskurven blev slettet ";
+
+"Cart updated successfully" = "Indkøbskurven blev opdateret ";
+
+"Order place successfully" = "Ordre er afgivet";
+
+"Total Gift Amount" = "Samlet gavebeløb ";
+
+"Item added to cart successfully" = "Varen blev tilføjet Indkøbskurven";
+
+"Please select any payment method" = "Vælg venligst en betalingsmetode ";
+
+"Your Gift Amount:" = "Dit gavebeløb:";
+
+"Order Now" = "Bestil nu";
+
+"Amount" = "Beløb";
+
+"Country" = "Land";
+
+"Action Code" = "Handlinsgkode";
+
+"Currency" = "Betalingsmiddel";
+
+"Email" = "Email";
+
+"TrackID" = "TrackID";
+
+"TockenID" = "TockenID";
+
+"Alert" = "Advarsel";
+
+"Check" = "Tjek";
+
+"Order Id:" = "Ordre Id:";
+
+"NA" = "NA";
+
+"Wrong gift code" = "Forkert gave kode";
+
+"No offers available" = "Ingen tilgængelige tilbud";
+
+"Your cart is empty" = "Din indkøbskurv er tom";
+
+"Please check terms and condition" = "Tjek venligst vilkår og betingelser ";
+
+"User Already Exists" = "  Bruger eksistere allerede ";
+
+"Please register to continue." = " Tilmeld dig for at fortsætte.";
+
+"App is available in Alaryan branch" = "App er tilgængelig i Alaryan filial ";
+
+"Use Code" = "Brug kode";
+
+"The offer is valid from" = " Tilbuddet gælder fra ";
+
+"to" = "til";
+
+"Expire on" = "Udløber den";
+
+"You need to select the any one item from  all single choice menu" = " Vælg tilbehør, for at fortsætte";
+
+"My Address" = "Mit adresse";
+
+"Address Deleted successfully" = " Adresse slettet ";
+
+"location not found" = " Placering ikke fundet ";
+
+"Rating added successfully" = "Bedømmelse tilføjet ";
+
+"Restaurant Information" = "Restaurant Information";
+
+"Have not you recieved the code? " = "Har du ikke modtaget koden? ";
+
+"Resend" = "Gensend";
+
+"Remaining time:" = "Resterende tid:";
+
+"min" = "min";
+
+"sec" = "sek";
+
+"Incorrect code." = "Forkert kode.";
+
+"Incorrect OTP" = "Forkert OTP";
+
+"For continue you need to accept" = " For at fortsætte skal du acceptere ";
+
+
+// Mar 14
+
+"Total Cart:" = "Samlet vogn:";
+
+"Order ID:" = "Ordre ID:";
+
+"Pre Order ID:" = "Forudbestilling Id:";
+
+"Completed" = "Afsluttet";
+
+"My Favourite" = "Min favorit";
+
+"Offer" = "Tilbud";
+
+"Menu" = "Menu";
+
+"Load More" = "Indlæs mere";
+
+"My Cart" = "Min kurv";
+
+"Apply Offer" = "Anvend tilbud";
+
+"Enter email address" = "Indtast email-adresse";
+
+"Order Details" = "Ordre detaljer";
+
+"Order placed successfully" = "Ordren afgivet med succes";
+
+"Products" = "Produkter";
+
+"Item Detail" = "Vare detalje";
+
+"Phone Number :" = "Telefonnummer :";
+
+"Tax Number:" = "Skattenummer:";
+
+"Your Fee" = "Dit gebyr";
+
+"Notify user for order picked" = "Giv brugeren besked om plukket ordre";
+
+"Notify user to arrived" = "Giv brugeren besked om ankommet";
+
+"Click to deliver" = "Klik for at levere";
+
+"Rate user and finish" = "Bedøm bruger og afslut";
+
+"My Earnings" = "Min indtjening";
+
+"Notifications" = "Meddelelser";
+
+"Withdraw Wallet Amount" = "Hæv tegnebogsbeløb";
+
+"Assigned Driver" = "Tildelt driver";
+
+"Give Rating" = "Giv vurdering";
+
+"Add Details" = "Tilføj detaljer";
+
+"Please update your restaurant details from update restaurant screen." = "Opdater venligst dine restaurantoplysninger fra update restaurantskærm.";
+
+"Pending" = "Afventer";
+
+"Preparing" = "Forbereder";
+
+"Ready" = "Parat";
+
+"Track Order" = "Spor ordre";
+
+"Rejected" = "Afvist";
+
+"Request for withdrawal send successfully" = "Anmodning om tilbagetrækning sendes med succes";
+
+"Vega invest Aps CVR:" = "Vega invest Aps CVR:";
+
+"TLF:" = "TLF:";
+
+"Not Paid" = "Ikke betalt";
+
+"Name" = "Navn";
+
+"Address:" = "Adresse:";
+
+"Mobile:" = "Mobil:";
+
+"Restaurant" = "Restaurant";
+
+"Available Driver" = "Tilgængelig driver";
+
+"km away" = "km væk";
+
+"On the way to pickup" = "På vej til afhentning";
+
+"Notify driver again" = "Giv chaufføren besked igen";
+
+"You need to select item from below list" = "du skal vælge fra listen nedenfor";
+
+"Please select address" = "Vælg venligst adresse";
+
+"Enter your business code" = "Enter your business code";
+
+"Enter offer code" = "Indtast tilbudskode";
+
+"Are you sure, you want to delete account" = "Er du sikker på, at du vil slette kontoen";
+
+"Please check your Mobile and check SMS for new password." = "Kontroller din mobiltelefon og kontroller SMS for ny adgangskode.";
+
+"Optional" = "Valgfrit";
+
+"Extra Items" = "Ekstra tilbehør";

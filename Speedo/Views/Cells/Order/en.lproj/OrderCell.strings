@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Test Item"; ObjectID = "A8K-OV-eGL"; */
+"A8K-OV-eGL.text" = "Test Item";
+
+/* Class = "UILabel"; text = "Pending"; ObjectID = "AvR-Y3-jnG"; */
+"AvR-Y3-jnG.text" = "Pending";
+
+/* Class = "UILabel"; text = "Order Id: 1"; ObjectID = "GoV-Ra-3ux"; */
+"GoV-Ra-3ux.text" = "Order Id: 1";
+
+/* Class = "UILabel"; text = "2021-04-20 07:08:15"; ObjectID = "R2Y-rf-1lt"; */
+"R2Y-rf-1lt.text" = "2021-04-20 07:08:15";
+
+/* Class = "UILabel"; text = "ITEMS"; ObjectID = "bGw-iY-kHh"; */
+"bGw-iY-kHh.text" = "ITEMS";
+
+/* Class = "UILabel"; text = "$10"; ObjectID = "ddv-Rn-X6T"; */
+"ddv-Rn-X6T.text" = "$10";
+
+/* Class = "UILabel"; text = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"; ObjectID = "iOp-wd-iye"; */
+"iOp-wd-iye.text" = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
+/* Class = "UIButton"; normalTitle = "Track Order"; ObjectID = "kAP-jM-36c"; */
+"kAP-jM-36c.normalTitle" = "Track Order";
+
+/* Class = "UILabel"; text = "ORDERED ON"; ObjectID = "lwY-Ef-2bB"; */
+"lwY-Ef-2bB.text" = "ORDERED ON";
+
+/* Class = "UIButton"; normalTitle = "Reorder"; ObjectID = "q8X-e5-IK4"; */
+"q8X-e5-IK4.normalTitle" = "Reorder";
+
+/* Class = "UILabel"; text = "1 x Capri, 2 x Salad"; ObjectID = "uff-mP-cwl"; */
+"uff-mP-cwl.text" = "1 x Capri, 2 x Salad";
