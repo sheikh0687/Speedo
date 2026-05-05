@@ -80,10 +80,10 @@ extension CurrentOrderVC: UITableViewDataSource {
         
         if let orderType = object.orderType, orderType == "Current" {
             cell.lblOrderId.text = "\(R.string.localizable.orderId()) \(object.id ?? "")"
-            cell.lblOrderId.tintColor = .darkGray
+            cell.lblOrderId.textColor = .darkGray
         } else {
             cell.lblOrderId.text = "\(R.string.localizable.preOrderID()) \(object.id ?? "")"
-            cell.lblOrderId.tintColor = R.color.theme_color()
+            cell.lblOrderId.textColor = R.color.theme_color()
         }
         
 //        let arrItems = object.productDetails?.map({ "\($0.quantity ?? "") x \($0.itemName ?? "")" }).joined(separator: ",")
