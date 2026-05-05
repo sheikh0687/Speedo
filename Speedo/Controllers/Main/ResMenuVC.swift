@@ -107,7 +107,7 @@ extension ResMenuVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ProductDetailVC") as! ProductDetailVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ProductDetailVC") as! ProductDetailVC
         vc.productId = self.arrProducts[indexPath.row].id ?? ""
         vc.restId = self.restId
         self.navigationController?.pushViewController(vc, animated: true)

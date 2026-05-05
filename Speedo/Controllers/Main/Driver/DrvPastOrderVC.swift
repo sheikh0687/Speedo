@@ -100,7 +100,7 @@ extension DrvPastOrderVC: UITableViewDataSource {
         }
         
         cell.cloPrintBill = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
             vc.orderId = self.arr[indexPath.row].id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }

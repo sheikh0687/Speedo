@@ -204,7 +204,7 @@
 "EFe-08-wIo.normalTitle" = "User";
 
 /* Class = "UIButton"; normalTitle = "Cash"; ObjectID = "EmC-H9-Wdg"; */
-"EmC-H9-Wdg.normalTitle" = "Pay in shop";
+"EmC-H9-Wdg.normalTitle" = "Cash";
 
 /* Class = "UILabel"; text = "Total Amount"; ObjectID = "Epv-1b-bLa"; */
 "Epv-1b-bLa.text" = "Total Amount";

@@ -108,7 +108,7 @@ class ProductVC: UIViewController {
     }
     
     @IBAction func btnCart(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "CartVC") as! CartVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "CartVC") as! CartVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -135,7 +135,7 @@ extension ProductVC: UITableViewDataSource {
         }
         
         cell.cloAdd = { () in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ProductDetailVC") as! ProductDetailVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ProductDetailVC") as! ProductDetailVC
             vc.productId = self.arrProducts[indexPath.row].id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -146,7 +146,7 @@ extension ProductVC: UITableViewDataSource {
 extension ProductVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ProductDetailVC") as! ProductDetailVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ProductDetailVC") as! ProductDetailVC
         vc.productId = self.arrProducts[indexPath.row].id ?? ""
         self.navigationController?.pushViewController(vc, animated: true)
     }

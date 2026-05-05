@@ -19,21 +19,21 @@ class Switcher {
         if status {
             switch type {
             case "USER":
-                let mainViewController = R.storyboard.main().instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
-                let leftViewController = R.storyboard.main().instantiateViewController(withIdentifier: "LeftSideMenuVC") as! LeftSideMenuVC
+                let mainViewController = KStoryboard.instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
+                let leftViewController = KStoryboard.instantiateViewController(withIdentifier: "LeftSideMenuVC") as! LeftSideMenuVC
                 let rootVC = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: leftViewController)
                 
                 kAppDelegate.window?.rootViewController = rootVC
                 kAppDelegate.window?.makeKeyAndVisible()
             case "RESTAURANT":
-                let mainViewController = R.storyboard.main().instantiateViewController(withIdentifier: "ResHomeMainVC") as! ResHomeMainVC
-                let leftViewController = R.storyboard.main().instantiateViewController(withIdentifier: "ResLeftSideMenu") as! ResLeftSideMenu
+                let mainViewController = KStoryboard.instantiateViewController(withIdentifier: "ResHomeMainVC") as! ResHomeMainVC
+                let leftViewController = KStoryboard.instantiateViewController(withIdentifier: "ResLeftSideMenu") as! ResLeftSideMenu
                 let rootVC = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: leftViewController)
                 kAppDelegate.window?.rootViewController = rootVC
                 kAppDelegate.window?.makeKeyAndVisible()
             case "DRIVER":
-                let mainViewController = R.storyboard.main().instantiateViewController(withIdentifier: "DrvHomeMainVC") as! DrvHomeMainVC
-                let leftViewController = R.storyboard.main().instantiateViewController(withIdentifier: "DrvLeftSideMenu") as! DrvLeftSideMenu
+                let mainViewController = KStoryboard.instantiateViewController(withIdentifier: "DrvHomeMainVC") as! DrvHomeMainVC
+                let leftViewController = KStoryboard.instantiateViewController(withIdentifier: "DrvLeftSideMenu") as! DrvLeftSideMenu
                 let rootVC = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: leftViewController)
                 
                 kAppDelegate.window?.rootViewController = rootVC
@@ -42,7 +42,7 @@ class Switcher {
                 print("No User Type Find")
             }            
         } else {
-            let rootVC = R.storyboard.main().instantiateViewController(withIdentifier: "LandingVC") as! LandingVC
+            let rootVC = KStoryboard.instantiateViewController(withIdentifier: "LandingVC") as! LandingVC
             let nav = UINavigationController(rootViewController: rootVC)
             nav.isNavigationBarHidden = false
             kAppDelegate.window!.rootViewController = nav
@@ -51,7 +51,7 @@ class Switcher {
     }
     
     static func logoutFromGuest() {
-        let rootVC = R.storyboard.main().instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
+        let rootVC = KStoryboard.instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
         rootVC.form = "Login"
         rootVC.type = "USER"
         let nav = UINavigationController(rootViewController: rootVC)
@@ -61,8 +61,8 @@ class Switcher {
     }
     
     static func logToGuest() {
-        let mainViewController = R.storyboard.main().instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
-        let leftViewController = R.storyboard.main().instantiateViewController(withIdentifier: "LeftSideMenuVC") as! LeftSideMenuVC
+        let mainViewController = KStoryboard.instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
+        let leftViewController = KStoryboard.instantiateViewController(withIdentifier: "LeftSideMenuVC") as! LeftSideMenuVC
         let rootVC = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: leftViewController)
         
         kAppDelegate.window?.rootViewController = rootVC

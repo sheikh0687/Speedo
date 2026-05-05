@@ -65,12 +65,14 @@ extension ResCurrentOrderVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.resOpenOrderCell, for: indexPath)!
+        
         cell.vwStatusButton.isHidden = true
         
         let obj = self.arr[indexPath.row]
         if let arrCart = obj.cartDetails {
             cell.bindItems(arr: arrCart)
         }
+        
         cell.lblOrderId.text = "\(R.string.localizable.orderId()) \(obj.id ?? "")"
         cell.lblTotal.text = "\(k.currency) \(obj.totalAmount ?? "")"
         
@@ -90,7 +92,6 @@ extension ResCurrentOrderVC: UITableViewDataSource {
         cell.lblDriverName.text = "\(obj.driverDetails?.firstName ?? "") \(obj.driverDetails?.lastName ?? "")"
         Utility.setImageWithSDWebImage(obj.driverDetails?.image ?? "", cell.imgDriver)
         
-        print(obj.deliveryType)
         if let deliveryTyp = obj.deliveryType, deliveryTyp == "Pickup" {
             cell.btnAssignedDriver.isHidden = true
         }
@@ -136,27 +137,27 @@ extension ResCurrentOrderVC: UITableViewDataSource {
                 if let deliveryType = obj.deliveryType, deliveryType == "Pickup" {
                     self.changeStatus(obj.id ?? "", "Complete", "")
                 } else {
-                    let vc = R.storyboard.main().instantiateViewController(withIdentifier: "RestOrderDetailVC") as! RestOrderDetailVC
+                    let vc = KStoryboard.instantiateViewController(withIdentifier: "RestOrderDetailVC") as! RestOrderDetailVC
                     vc.orderId = obj.id ?? ""
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             } else if status == "Accept" {
                 self.changeStatus(obj.id ?? "", "Ready", "")
             } else {
-                let vc = R.storyboard.main().instantiateViewController(withIdentifier: "RestOrderDetailVC") as! RestOrderDetailVC
+                let vc = KStoryboard.instantiateViewController(withIdentifier: "RestOrderDetailVC") as! RestOrderDetailVC
                 vc.orderId = obj.id ?? ""
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
         
         cell.cloPrint = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
             vc.orderId = self.arr[indexPath.row].id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
         cell.cloAssignedDriver = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "RestAvailableDriverVC") as! RestAvailableDriverVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "RestAvailableDriverVC") as! RestAvailableDriverVC
             vc.orderId = self.arr[indexPath.row].id ?? ""
             vc.cloRefresh = {() in
                 self.getRequest()

@@ -48,7 +48,7 @@ class PastOrderVC: UIViewController {
     func reOrder(_ orderId: String) {
         print(self.paramreOrders(orderId))
         Api.shared.reOrder(self, self.paramreOrders(orderId)) { (response) in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "CartVC") as! CartVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "CartVC") as! CartVC
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -117,13 +117,13 @@ extension PastOrderVC: UITableViewDataSource {
             cell.lblOrderDate.text = object.dateTime ?? ""
         }
         cell.cloTrackOrder = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "DrvOrderDetailVC") as! DrvOrderDetailVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "DrvOrderDetailVC") as! DrvOrderDetailVC
             vc.orderId = object.id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
         cell.cloPrint = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
             vc.orderId = self.arr[indexPath.row].id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }

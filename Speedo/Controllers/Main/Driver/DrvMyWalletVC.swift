@@ -23,7 +23,7 @@ class DrvMyWalletVC: UIViewController {
     }
     
     @IBAction func btnWithdraw(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResWithdrawalVC") as! ResWithdrawalVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ResWithdrawalVC") as! ResWithdrawalVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

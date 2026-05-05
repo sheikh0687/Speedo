@@ -28,24 +28,24 @@ class LandingVC: UIViewController {
     }
     
     @IBAction func btnContinueAsUser(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "BusinessCodeVC") as! BusinessCodeVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "BusinessCodeVC") as! BusinessCodeVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnContinueAsRestaurant(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
         vc.type = "RESTAURANT"
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnDriver(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
         vc.type = "DRIVER"
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnLogin(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
         vc.form = "Login"
         vc.type = "USER"
         self.navigationController?.pushViewController(vc, animated: true)

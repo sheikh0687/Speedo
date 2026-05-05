@@ -12,8 +12,7 @@ enum LeftMenu: Int {
     case home = 0
     case myProfile
     case restuarantInfo
-//    case myReview
-    case changeLanguage    
+    case changeLanguage
     case terms
     case logout
 }
@@ -28,7 +27,6 @@ class LeftSideMenuVC: UIViewController {
         R.string.localizable.home(),
         R.string.localizable.myProfile(),
         R.string.localizable.restaurantInformation(),
-//        R.string.localizable.myReviews(),
         R.string.localizable.changeLanguage(),
         R.string.localizable.termsAndCondition(),
         R.string.localizable.logout()
@@ -38,10 +36,10 @@ class LeftSideMenuVC: UIViewController {
         R.image.ic_02(),
         R.image.ic_02(),
         R.image.ic_02(),
-//        R.image.ic_03(),
         R.image.ic_04(),
         R.image.ic_05(),
         R.image.ic_06(),
+        R.image.ic_07(),
         R.image.ic_07()
     ]
     
@@ -51,7 +49,6 @@ class LeftSideMenuVC: UIViewController {
     var restaurantInfoViewController: UIViewController!
     var myProfileViewController: UIViewController!
     var changeLangViewController: UIViewController!
-//    var myReviewsViewController: UIViewController!
     var TermsAndCondViewController: UIViewController!
     
     required init?(coder aDecoder: NSCoder) {
@@ -60,29 +57,25 @@ class LeftSideMenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.homeMain = R.storyboard.main().instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
-        self.leftMenu = R.storyboard.main().instantiateViewController(withIdentifier: "LeftSideMenuVC") as! LeftSideMenuVC
+        self.homeMain = KStoryboard.instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
+        self.leftMenu = KStoryboard.instantiateViewController(withIdentifier: "LeftSideMenuVC") as! LeftSideMenuVC
         self.tableViewOt.register(UINib(nibName: "LeftSideMenu", bundle: nil), forCellReuseIdentifier: "LeftSideMenu")
         self.tableViewOt.tableFooterView = UIView(frame: CGRect.zero)
         
-        let objHomeVC = R.storyboard.main().instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
+        let objHomeVC = KStoryboard.instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
         self.homeViewController = UINavigationController(rootViewController: objHomeVC)
         
-        let objMyProfileVC = R.storyboard.main().instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
+        let objMyProfileVC = KStoryboard.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
         objMyProfileVC.comingFrom = "User"
         self.myProfileViewController = UINavigationController(rootViewController: objMyProfileVC)
         
-        let objRestaurantInfoVC = R.storyboard.main().instantiateViewController(withIdentifier: "RestaurantInfoVC") as! RestaurantInfoVC
+        let objRestaurantInfoVC = KStoryboard.instantiateViewController(withIdentifier: "RestaurantInfoVC") as! RestaurantInfoVC
         self.restaurantInfoViewController = UINavigationController(rootViewController: objRestaurantInfoVC)
         
-        let objChangeLanguageVC = R.storyboard.main().instantiateViewController(withIdentifier: "ChangeLanguageVC") as! ChangeLanguageVC
+        let objChangeLanguageVC = KStoryboard.instantiateViewController(withIdentifier: "ChangeLanguageVC") as! ChangeLanguageVC
         self.changeLangViewController = UINavigationController(rootViewController: objChangeLanguageVC)
         
-//        let objMyReviewsVC = R.storyboard.main().instantiateViewController(withIdentifier: "MyReviewsVC") as! MyReviewsVC
-//        objMyReviewsVC.comingFrom = "user"
-//        self.myReviewsViewController = UINavigationController(rootViewController: objMyReviewsVC)
-        
-        let objTermsAndCondVC = R.storyboard.main().instantiateViewController(withIdentifier: "TermsVC") as! TermsVC
+        let objTermsAndCondVC = KStoryboard.instantiateViewController(withIdentifier: "TermsVC") as! TermsVC
         self.TermsAndCondViewController = UINavigationController(rootViewController: objTermsAndCondVC)
     }
     
@@ -102,7 +95,7 @@ class LeftSideMenuVC: UIViewController {
     }
     
     func changeController(_ index: Int) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "HomeMainVC") as! HomeMainVC
         vc.indexSelect = index
         let rootVC = SlideMenuController(mainViewController: vc, leftMenuViewController: self.leftMenu)
         kAppDelegate.window?.rootViewController = rootVC
@@ -133,16 +126,6 @@ class LeftSideMenuVC: UIViewController {
                     }
                 }
             }
-//        case .myReview:
-//            if Utility.isUserLogin() {
-//                self.slideMenuController()?.changeMainViewController(self.myReviewsViewController, close: true)
-//            } else {
-//                Utility.showAlertRegistration(parentViewController: self) { (bool) in
-//                    if bool {
-//                        Utility.logoutt()
-//                    }
-//                }
-//            }
         case .changeLanguage:
             self.slideMenuController()?.changeMainViewController(self.changeLangViewController, close: true)
         case .terms:

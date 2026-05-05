@@ -8,7 +8,7 @@
 import UIKit
 
 class CartVC: UIViewController {
-
+    
     @IBOutlet weak var tableViewOt: UITableView!
     @IBOutlet var btnSubmit: UIButton!
     @IBOutlet var lblTotal: UILabel!
@@ -60,31 +60,27 @@ class CartVC: UIViewController {
         }
     }
     
-    func paramUpdateCart(_ cartId: String, _ amount: Int, _ qty: Int, _ type: String) -> [String:AnyObject] {
-        var dict : [String:AnyObject] = [:]
-        dict["cart_id"] = cartId as AnyObject
-        dict["total_amount"] = amount as AnyObject
-        dict["quantity"] = qty as AnyObject
-        dict["type"] = type as AnyObject
-        return dict
-    }
-    
     func updateCart(_ cartId: String, _ amount: Int, _ qty: Int, _ type: String) {
-        Api.shared.updateCart(self, self.paramUpdateCart(cartId, amount, qty, type)) { (response) in
+        
+        var paramUpdateCart : [String:AnyObject] = [:]
+        paramUpdateCart["cart_id"] = cartId as AnyObject
+        paramUpdateCart["total_amount"] = amount as AnyObject
+        paramUpdateCart["quantity"] = qty as AnyObject
+        paramUpdateCart["type"] = type as AnyObject
+        
+        Api.shared.updateCart(self, paramUpdateCart){ (response) in
             Utility.showAlertWithAction(withTitle: k.appName, message: R.string.localizable.cartUpdatedSuccessfully(), delegate: nil, parentViewController: self) { (boool) in
                 self.getCart()
             }
         }
     }
     
-    func paramDelete(_ cartId: String) -> [String:AnyObject] {
-        var dict : [String:AnyObject] = [:]
-        dict["cart_id"] = cartId as AnyObject
-        return dict
-    }
-    
     func delete(_ cartId: String) {
-        Api.shared.deleteCart(self, self.paramDelete(cartId)) { (response) in
+        
+        var paramDelete : [String:AnyObject] = [:]
+        paramDelete["cart_id"] = cartId as AnyObject
+        
+        Api.shared.deleteCart(self, paramDelete) { (response) in
             Utility.showAlertWithAction(withTitle: k.appName, message: R.string.localizable.cartDeletedSuccessfully(), delegate: nil, parentViewController: self) { (boool) in
                 self.getCart()
             }
@@ -92,7 +88,7 @@ class CartVC: UIViewController {
     }
     
     @IBAction func btnSubmit(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "PlaceOrderVC") as! PlaceOrderVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "PlaceOrderVC") as! PlaceOrderVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -126,21 +122,17 @@ class CartVC: UIViewController {
     }
     
     func applyOfferCode(_ cartId: String, _ catId: String) {
-        print(self.paramApplyOfferCode(cartId, catId))
-        Api.shared.applyOffer(self, self.paramApplyOfferCode(cartId, catId)) {(response) in
+        var paramApplyOfferCode : [String:AnyObject] = [:]
+        paramApplyOfferCode["user_id"] = k.userDefault.value(forKey: k.session.userId)! as AnyObject
+        paramApplyOfferCode["current_time"] = Utility.getCurrentTime() as AnyObject
+        paramApplyOfferCode["rest_id"] = k.userDefault.value(forKey: k.session.interestedRestId)!  as AnyObject
+        paramApplyOfferCode["offer_code"] = self.StrForgotEmail as AnyObject
+        paramApplyOfferCode["cart_id"] = cartId as AnyObject
+        paramApplyOfferCode["cat_id"] = catId as AnyObject
+        
+        Api.shared.applyOffer(self, paramApplyOfferCode) {(response) in
             self.getCart()
         }
-    }
-    
-    func paramApplyOfferCode(_ cartId: String, _ catId: String) -> [String:AnyObject] {
-        var dict : [String:AnyObject] = [:]
-        dict["user_id"] = k.userDefault.value(forKey: k.session.userId)! as AnyObject
-        dict["current_time"] = Utility.getCurrentTime() as AnyObject
-        dict["rest_id"] = k.userDefault.value(forKey: k.session.interestedRestId)!  as AnyObject
-        dict["offer_code"] = self.StrForgotEmail as AnyObject
-        dict["cart_id"] = cartId as AnyObject
-        dict["cat_id"] = catId as AnyObject
-        return dict
     }
 }
 
@@ -179,9 +171,9 @@ extension CartVC: UITableViewDataSource {
 
 extension CartVC: UITableViewDelegate {
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 150
-//    }
+    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    //        return 150
+    //    }
 }
 
 extension CartVC: UICollectionViewDataSource {
@@ -215,7 +207,7 @@ extension CartVC: UICollectionViewDataSource {
 
 extension CartVC: UICollectionViewDelegateFlowLayout {
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: (self.collectionViewProductOt.frame.width), height: 115.0)
-//    }
+    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    //        return CGSize(width: (self.collectionViewProductOt.frame.width), height: 115.0)
+    //    }
 }

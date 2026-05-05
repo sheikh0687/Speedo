@@ -48,7 +48,7 @@ class DrvOrderMainVC: UIViewController {
     }
     
     override func rightClick() {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "CartVC") as! CartVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "CartVC") as! CartVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

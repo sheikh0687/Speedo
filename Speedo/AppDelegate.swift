@@ -14,6 +14,7 @@ import FirebaseInstanceID
 import FirebaseMessaging
 
 let kAppDelegate = UIApplication.shared.delegate as! AppDelegate
+let KStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate , MessagingDelegate {

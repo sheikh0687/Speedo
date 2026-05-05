@@ -94,6 +94,8 @@ enum Router: String {
     case getGuestProfile
     case deleteAccount
     
+    case removed_apply_offer
+    
     public func url() -> String {
         switch self {
         case .logIn:
@@ -231,6 +233,9 @@ enum Router: String {
             return Router.oAuthRoute(path: "get_guest_user_profile")
         case .deleteAccount:
             return Router.oAuthRoute(path: "delete_account")
+            
+        case .removed_apply_offer:
+            return Router.oAuthRoute(path: "removed_apply_offer")
         }
     }
     

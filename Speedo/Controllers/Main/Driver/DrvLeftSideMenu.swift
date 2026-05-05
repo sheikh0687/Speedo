@@ -63,32 +63,32 @@ class DrvLeftSideMenu: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.homeMain = R.storyboard.main().instantiateViewController(withIdentifier: "DrvHomeVC") as! DrvHomeVC
-        self.leftMenu = R.storyboard.main().instantiateViewController(withIdentifier: "DrvLeftSideMenu") as! DrvLeftSideMenu
+        self.homeMain = KStoryboard.instantiateViewController(withIdentifier: "DrvHomeVC") as! DrvHomeVC
+        self.leftMenu = KStoryboard.instantiateViewController(withIdentifier: "DrvLeftSideMenu") as! DrvLeftSideMenu
         self.tableViewOt.register(UINib(nibName: "LeftSideMenu", bundle: nil), forCellReuseIdentifier: "LeftSideMenu")
         self.tableViewOt.tableFooterView = UIView(frame: CGRect.zero)
         
-        let objDrvHomeVC = R.storyboard.main().instantiateViewController(withIdentifier: "DrvHomeVC") as! DrvHomeVC
+        let objDrvHomeVC = KStoryboard.instantiateViewController(withIdentifier: "DrvHomeVC") as! DrvHomeVC
         self.homeViewController = UINavigationController(rootViewController: objDrvHomeVC)
         
-        let objMyProfileVC = R.storyboard.main().instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
+        let objMyProfileVC = KStoryboard.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
         objMyProfileVC.comingFrom = "Driver"
         self.myProfileViewController = UINavigationController(rootViewController: objMyProfileVC)
         
-        let objMyReviewsVC = R.storyboard.main().instantiateViewController(withIdentifier: "MyReviewsVC") as! MyReviewsVC
+        let objMyReviewsVC = KStoryboard.instantiateViewController(withIdentifier: "MyReviewsVC") as! MyReviewsVC
         objMyReviewsVC.comingFrom = "Driver"
         self.myReviewsViewController = UINavigationController(rootViewController: objMyReviewsVC)
         
-        let objMyWalletVC = R.storyboard.main().instantiateViewController(withIdentifier: "ResMyWalletVC") as! ResMyWalletVC
+        let objMyWalletVC = KStoryboard.instantiateViewController(withIdentifier: "ResMyWalletVC") as! ResMyWalletVC
         self.myWalletViewController = UINavigationController(rootViewController: objMyWalletVC)
         
-        let objMyEarningsVC = R.storyboard.main().instantiateViewController(withIdentifier: "ResMyEarningsVC") as! ResMyEarningsVC
+        let objMyEarningsVC = KStoryboard.instantiateViewController(withIdentifier: "ResMyEarningsVC") as! ResMyEarningsVC
         self.myEarningViewController = UINavigationController(rootViewController: objMyEarningsVC)
         
-        let objChangeLanguageVC = R.storyboard.main().instantiateViewController(withIdentifier: "ChangeLanguageVC") as! ChangeLanguageVC
+        let objChangeLanguageVC = KStoryboard.instantiateViewController(withIdentifier: "ChangeLanguageVC") as! ChangeLanguageVC
         self.changeLangViewController = UINavigationController(rootViewController: objChangeLanguageVC)
         
-        let objTermsAndCondVC = R.storyboard.main().instantiateViewController(withIdentifier: "TermsAndCondVC") as! TermsAndCondVC
+        let objTermsAndCondVC = KStoryboard.instantiateViewController(withIdentifier: "TermsAndCondVC") as! TermsAndCondVC
         self.TermsAndCondViewController = UINavigationController(rootViewController: objTermsAndCondVC)
     }
     
@@ -104,7 +104,7 @@ class DrvLeftSideMenu: UIViewController {
     }
     
     func changeController(_ index: Int) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "DrvHomeMainVC") as! DrvHomeMainVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "DrvHomeMainVC") as! DrvHomeMainVC
         vc.indexSelect = index
         let rootVC = SlideMenuController(mainViewController: vc, leftMenuViewController: self.leftMenu)
         kAppDelegate.window?.rootViewController = rootVC

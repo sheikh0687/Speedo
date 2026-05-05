@@ -81,7 +81,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func btnForgotPassword(_ sender: Any) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ForgotPasswordVC") as! ForgotPasswordVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ForgotPasswordVC") as! ForgotPasswordVC
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .overFullScreen
         vc.type = self.userType

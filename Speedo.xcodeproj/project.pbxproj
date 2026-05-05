@@ -61,7 +61,6 @@
 		040C21E1262B59CE00D79EAB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C21C2262B59CE00D79EAB /* Utility.swift */; };
 		040C21E2262B59CE00D79EAB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C21C3262B59CE00D79EAB /* LocationManager.swift */; };
 		040C21E3262B59CE00D79EAB /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C21C4262B59CE00D79EAB /* DatePickerDialog.swift */; };
-		040C2308262B63C200D79EAB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C2307262B63C200D79EAB /* R.generated.swift */; };
 		040C233B262B654300D79EAB /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040C2334262B654300D79EAB /* Cairo-ExtraLight.ttf */; };
 		040C233C262B654300D79EAB /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040C2335262B654300D79EAB /* Cairo-SemiBold.ttf */; };
 		040C233D262B654300D79EAB /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040C2336262B654300D79EAB /* Cairo-Regular.ttf */; };
@@ -208,9 +207,9 @@
 		04FF320E267BD7A30029F3AD /* ProductPlusMinusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FF320C267BD7A30029F3AD /* ProductPlusMinusCell.xib */; };
 		4C795B0CD06EB906880BCAE6 /* Pods_Speedo_SpeedoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6F645CDFA09773E5BCA877 /* Pods_Speedo_SpeedoUITests.framework */; };
 		B3873FC1D5239B0E4ECAE5CE /* Pods_Speedo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3228CC2C24017D364F295D /* Pods_Speedo.framework */; };
+		B7026B9F2EDDD4B500BD3E5B /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = B7026B9E2EDDD4B500BD3E5B /* RswiftLibrary */; };
 		CF2B3C482B15E2EF00B608F0 /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B3C462B15E2EF00B608F0 /* DemoCell.swift */; };
 		CF2B3C492B15E2EF00B608F0 /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2B3C472B15E2EF00B608F0 /* DemoCell.xib */; };
-		CF2B86632967279300AF0C34 /* aaa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B86622967279200AF0C34 /* aaa.swift */; };
 		CF52DAE02AF4F137005073B4 /* SubAmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52DADE2AF4F137005073B4 /* SubAmountCell.swift */; };
 		CF52DAE12AF4F137005073B4 /* SubAmountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF52DADF2AF4F137005073B4 /* SubAmountCell.xib */; };
 		CFDBE39E2CAEC17800E5FE32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFDBE39D2CAEC17800E5FE32 /* GoogleService-Info.plist */; };
@@ -317,7 +316,6 @@
 		040C21C2262B59CE00D79EAB /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		040C21C3262B59CE00D79EAB /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		040C21C4262B59CE00D79EAB /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
-		040C2307262B63C200D79EAB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		040C2334262B654300D79EAB /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
 		040C2335262B654300D79EAB /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
 		040C2336262B654300D79EAB /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
@@ -478,7 +476,6 @@
 		CD3228CC2C24017D364F295D /* Pods_Speedo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speedo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2B3C462B15E2EF00B608F0 /* DemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
 		CF2B3C472B15E2EF00B608F0 /* DemoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
-		CF2B86622967279200AF0C34 /* aaa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aaa.swift; sourceTree = "<group>"; };
 		CF52DADE2AF4F137005073B4 /* SubAmountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubAmountCell.swift; sourceTree = "<group>"; };
 		CF52DADF2AF4F137005073B4 /* SubAmountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubAmountCell.xib; sourceTree = "<group>"; };
 		CFDBE39D2CAEC17800E5FE32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -495,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3873FC1D5239B0E4ECAE5CE /* Pods_Speedo.framework in Frameworks */,
+				B7026B9F2EDDD4B500BD3E5B /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,7 +609,6 @@
 			isa = PBXGroup;
 			children = (
 				CFDBE39D2CAEC17800E5FE32 /* GoogleService-Info.plist */,
-				040C2307262B63C200D79EAB /* R.generated.swift */,
 				040C215D262B588600D79EAB /* Assets.xcassets */,
 				041708E727D7C69700FD9C43 /* Localizable.strings */,
 				040C2332262B654300D79EAB /* Fonts */,
@@ -757,7 +754,6 @@
 				0464A3872755F9FE00867132 /* RestaurantInfoVC.swift */,
 				0464A38C27560F7900867132 /* ChangeLanguageVC.swift */,
 				046099CC27D3762C00D85599 /* TermsVC.swift */,
-				CF2B86622967279200AF0C34 /* aaa.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1165,7 +1161,6 @@
 			buildConfigurationList = 040C217B262B588600D79EAB /* Build configuration list for PBXNativeTarget "Speedo" */;
 			buildPhases = (
 				2CBA7C1B6B3171B16F1BE50B /* [CP] Check Pods Manifest.lock */,
-				040C2213262B612400D79EAB /* ShellScript */,
 				AB3DCF2FC4F5F83A6A6D902C /* Binary Libraries Compiler */,
 				040C214D262B588400D79EAB /* Sources */,
 				040C214E262B588400D79EAB /* Frameworks */,
@@ -1175,6 +1170,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B7026BA12EDDD53000BD3E5B /* PBXTargetDependency */,
 			);
 			name = Speedo;
 			productName = Speedo;
@@ -1253,6 +1249,9 @@
 				da,
 			);
 			mainGroup = 040C2148262B588400D79EAB;
+			packageReferences = (
+				B7026B9D2EDDD4B500BD3E5B /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			productRefGroup = 040C2152262B588400D79EAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1330,25 +1329,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		040C2213262B612400D79EAB /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$TEMP_DIR/rswift-lastrun",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
 		2CBA7C1B6B3171B16F1BE50B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1379,9 +1359,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Speedo-SpeedoUITests/Pods-Speedo-SpeedoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Speedo-SpeedoUITests/Pods-Speedo-SpeedoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1396,9 +1380,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Speedo/Pods-Speedo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Speedo/Pods-Speedo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1566,7 +1554,6 @@
 				0457595C26C2EB4F00351D39 /* MBProgressHUD.m in Sources */,
 				CF2B3C482B15E2EF00B608F0 /* DemoCell.swift in Sources */,
 				0458C3DA2743C0920031583C /* PaymentGateway.swift in Sources */,
-				040C2308262B63C200D79EAB /* R.generated.swift in Sources */,
 				040C21CB262B59CE00D79EAB /* BorderTextView.swift in Sources */,
 				047C8F5726E8DD3500081CE4 /* RestOrderDetailVC.swift in Sources */,
 				049D5DD9262CB41800478E8D /* ProductVC.swift in Sources */,
@@ -1617,7 +1604,6 @@
 				0401C75526C3EAEF001107A5 /* AddressCell.swift in Sources */,
 				0407B06227D337D10003ADC7 /* OTP.swift in Sources */,
 				049114EA271EE9B40007610C /* UpdateOnlineStatus.swift in Sources */,
-				CF2B86632967279300AF0C34 /* aaa.swift in Sources */,
 				0457595D26C2EB4F00351D39 /* Reachability.m in Sources */,
 				04BE87612638A5EE005710BE /* ResOpenOrderCell.swift in Sources */,
 				0462AF3F26E77ECB000F3352 /* RestUpdProfileCell.swift in Sources */,
@@ -1669,6 +1655,10 @@
 			isa = PBXTargetDependency;
 			target = 040C2150262B588400D79EAB /* Speedo */;
 			targetProxy = 040C2173262B588600D79EAB /* PBXContainerItemProxy */;
+		};
+		B7026BA12EDDD53000BD3E5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B7026BA02EDDD53000BD3E5B /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1940,7 +1930,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.9;
+				MARKETING_VERSION = 4.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jf.Speedo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1969,7 +1959,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.9;
+				MARKETING_VERSION = 4.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jf.Speedo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2103,6 +2093,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7026B9D2EDDD4B500BD3E5B /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7026B9E2EDDD4B500BD3E5B /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7026B9D2EDDD4B500BD3E5B /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		B7026BA02EDDD53000BD3E5B /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7026B9D2EDDD4B500BD3E5B /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 040C2149262B588400D79EAB /* Project object */;
 }

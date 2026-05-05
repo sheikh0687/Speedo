@@ -38,7 +38,7 @@ class ResEditProfileVC: UIViewController {
     }
     
     override func rightClick() {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -56,12 +56,12 @@ class ResEditProfileVC: UIViewController {
     }
     
     @IBAction func btnChangePassword(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ChangePasswordVC") as! ChangePasswordVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ChangePasswordVC") as! ChangePasswordVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnUpdateProfile(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResUpdateVC") as! ResUpdateVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ResUpdateVC") as! ResUpdateVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

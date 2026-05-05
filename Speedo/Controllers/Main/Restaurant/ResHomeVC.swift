@@ -30,7 +30,7 @@ class ResHomeVC: UIViewController {
         if let restaurantName = k.userDefault.value(forKey: k.session.restaurantName) as? String, restaurantName == "" {
             Utility.showAlertYesNoActionCust(withTitle: R.string.localizable.addDetails(), message: R.string.localizable.pleaseUpdateYourRestaurantDetailsFromUpdateRestaurantScreen(), delegate: nil, parentViewController: self) { (boool) in
                 if boool {
-                    let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResUpdateVC") as! ResUpdateVC
+                    let vc = KStoryboard.instantiateViewController(withIdentifier: "ResUpdateVC") as! ResUpdateVC
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             }

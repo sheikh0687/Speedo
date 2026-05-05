@@ -85,7 +85,7 @@ extension ResPastOrderVC: UITableViewDataSource {
         Utility.setImageWithSDWebImage(obj.userDetails?.image ?? "", cell.imgUser)
         
         cell.cloPrint = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
             vc.orderId = self.arr[indexPath.row].id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }

@@ -99,7 +99,7 @@ extension DrvCurrentOrderVC: UITableViewDataSource {
         Utility.setImageWithSDWebImage(obj.userDetails?.image ?? "", cell.imgUser)
         
         cell.cloSeeOnMap = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "DrvOrderDetailVC") as! DrvOrderDetailVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "DrvOrderDetailVC") as! DrvOrderDetailVC
             vc.orderId = obj.id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -127,7 +127,7 @@ extension DrvCurrentOrderVC: UITableViewDataSource {
             case "Arrived":
                 self.changeDeliveryStatus(obj.id ?? "", "Delivered")
             case "Delivered":
-                let vc = R.storyboard.main().instantiateViewController(withIdentifier: "DrvRatingVC") as! DrvRatingVC
+                let vc = KStoryboard.instantiateViewController(withIdentifier: "DrvRatingVC") as! DrvRatingVC
                 vc.deliveryStatus = "Complete"
                 vc.orderRequestId = obj.id ?? ""
                 self.navigationController?.pushViewController(vc, animated: true)

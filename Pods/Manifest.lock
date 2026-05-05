@@ -117,9 +117,6 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
-  - R.swift (5.4.0):
-    - R.swift.Library (~> 5.3.0)
-  - R.swift.Library (5.3.0)
   - SDWebImage/Core (4.4.8)
   - SDWebImage/WebP (4.4.8):
     - libwebp (< 2.0, >= 0.5)
@@ -137,7 +134,6 @@ DEPENDENCIES:
   - Firebase/Messaging
   - Firebase/Storage
   - IQKeyboardManagerSwift
-  - R.swift
   - SDWebImage/WebP
   - SkeletonView
   - SlideMenuControllerSwift
@@ -165,8 +161,6 @@ SPEC REPOS:
     - libwebp
     - nanopb
     - PromisesObjC
-    - R.swift
-    - R.swift.Library
     - SDWebImage
     - SkeletonView
     - SlideMenuControllerSwift
@@ -193,13 +187,11 @@ SPEC CHECKSUMS:
   libwebp: e90b9c01d99205d03b6bb8f2c8c415e5a4ef66f0
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
-  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SkeletonView: cac18a3ac4f893b09d99e65072d806ef08377aae
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: de9ad35b2ae50f445387ba9cf3d2f745cfcd742d
+PODFILE CHECKSUM: 5c13d7b0531c9d052312a70287b87d888069a26a
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.16.2

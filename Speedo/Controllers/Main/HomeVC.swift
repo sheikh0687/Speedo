@@ -114,9 +114,9 @@ class HomeVC: UIViewController {
             if response.count > 0 {
                 self.arrCategory = response
                 if response.count % 2 == 0 {
-                    self.constCateHeight.constant = CGFloat((125 * (response.count/2)))
+                    self.constCateHeight.constant = CGFloat((160 * (response.count/2)))
                 } else {
-                    self.constCateHeight.constant = CGFloat((125 * (response.count/2)) + 125)
+                    self.constCateHeight.constant = CGFloat((160 * (response.count/2)) + 160)
                 }
             } else {
                 self.arrCategory = []
@@ -126,18 +126,18 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func btnSeeMore(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "TopRatedRestVC") as! TopRatedRestVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "TopRatedRestVC") as! TopRatedRestVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func rightClick() {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResNotificationVC") as! ResNotificationVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ResNotificationVC") as! ResNotificationVC
         vc.comingFrom = "user"
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnCart(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "CartVC") as! CartVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "CartVC") as! CartVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -196,7 +196,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
         } else if collectionView == self.clvTopRated {
             return CGSize(width: self.view.bounds.width - 10, height: 260)
         } else {
-            return CGSize(width: self.clvBanner.frame.width / 2, height: 125)
+            return CGSize(width: self.clvBanner.frame.width / 2, height: 160)
         }
     }
 }
@@ -205,15 +205,15 @@ extension HomeVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.clvCategory {
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ProductVC") as! ProductVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ProductVC") as! ProductVC
             vc.categoryId = self.arrCategory[indexPath.row].id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         } else if collectionView == self.clvTopRated {
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "RestaurantMenuVC") as! RestaurantMenuVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "RestaurantMenuVC") as! RestaurantMenuVC
             vc.objRest = self.arrTopRestaurant[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         } else if collectionView == self.clvBanner {
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ProductVC") as! ProductVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ProductVC") as! ProductVC
             vc.categoryId = self.arrBanner[indexPath.row].catId ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }

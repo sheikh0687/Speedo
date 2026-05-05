@@ -47,6 +47,7 @@ class PlaceOrderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getCart()
+        print(k.userDefault.value(forKey: k.session.interestedRestId)!)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -69,6 +70,9 @@ class PlaceOrderVC: UIViewController {
     
     func getCart() {
         Api.shared.getCart(self) { (response) in
+            
+            print(response)
+            
             self.subtotal = response.beforeDiscountAmount ?? ""
             self.discountAmount = response.totalDiscountAmount ?? ""
             self.totalAmount = response.totalAmount ?? ""
@@ -126,7 +130,7 @@ class PlaceOrderVC: UIViewController {
         self.selectedDelivery = "Pickup"
         self.btnCash.isHidden = false
         self.vwLocation.isHidden = true
-        self.getCart()
+        self.removedOffer()
     }
     
     @IBAction func btnDelivery(_ sender: UIButton) {
@@ -145,6 +149,7 @@ class PlaceOrderVC: UIViewController {
         self.btnCard.setImage(R.image.radio_check(), for: .normal)
         self.selectedPayment = "Online"
         self.selectedPayType = "Online"
+        self.removedOffer()
     }
     
     @IBAction func btnCard(_ sender: UIButton) {
@@ -160,7 +165,7 @@ class PlaceOrderVC: UIViewController {
     }
     
     @IBAction func btnAddress(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "MyAddressVC") as! MyAddressVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "MyAddressVC") as! MyAddressVC
         vc.comingFrom = "placeorder"
         vc.cloSelect = { (addressId, address, lat, lon, title) in
             self.address = address
@@ -172,6 +177,26 @@ class PlaceOrderVC: UIViewController {
         }
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func removedOffer()
+    {
+        var paramDict: [String : AnyObject] = [:]
+        paramDict["user_id"] = k.userDefault.value(forKey: k.session.userId) as AnyObject?
+        paramDict["rest_id"] = k.userDefault.value(forKey: k.session.interestedRestId) as AnyObject?
+        paramDict["status"] = k.emptyString as AnyObject
+        paramDict["order_type"] = selectedDelivery as AnyObject
+        
+        print(paramDict)
+        
+        Api.shared.removed_ApplyOffer(self, paramDict) { responseData in
+            if responseData.status == 1 {
+                self.getCart()
+            } else {
+                print(responseData.message ?? "")
+            }
+        }
+    }
+    
     
     func getEstimateDeliveryFees(_ lat: String, _ lon: String) {
         Api.shared.estimateDeliveryFees(self, self.paramEstimateDeliveryFees(lat, lon)) { (response) in
@@ -287,7 +312,7 @@ class PlaceOrderVC: UIViewController {
     func paymentGateway(_ orderId: String) {
         Api.shared.paymentGateway(self, self.paramPaymentGateway(orderId)) { (response) in
             let webviewUrl = response.hostedPaymentPageUrl ?? ""
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "PaymentGatewayVC") as! PaymentGatewayVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "PaymentGatewayVC") as! PaymentGatewayVC
             vc.paymentGatewayUrl = webviewUrl
             vc.orderId = orderId
             self.navigationController?.pushViewController(vc, animated: true)

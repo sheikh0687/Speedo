@@ -48,7 +48,7 @@ class MyFavouriteVC: UIViewController {
     }
     
     override func rightClick() {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "CartVC") as! CartVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "CartVC") as! CartVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -84,7 +84,7 @@ class MyFavouriteVC: UIViewController {
     }
     
     @IBAction func btnCart(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "CartVC") as! CartVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "CartVC") as! CartVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -138,7 +138,7 @@ extension MyFavouriteVC: UICollectionViewDelegateFlowLayout {
 extension MyFavouriteVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ProductDetailVC") as! ProductDetailVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ProductDetailVC") as! ProductDetailVC
         vc.productId = self.arr[indexPath.row].id ?? ""
         vc.restId = self.arr[indexPath.row].restDetails?.id ?? ""
         self.navigationController?.pushViewController(vc, animated: true)

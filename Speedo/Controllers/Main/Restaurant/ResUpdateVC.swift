@@ -191,7 +191,7 @@ class ResUpdateVC: UIViewController {
     }
     
     @IBAction func btnLocation(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "AddressPickerVC") as! AddressPickerVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "AddressPickerVC") as! AddressPickerVC
         vc.locationPickedBlock = { (location_coordinate, lat, lon, address) in
             self.lat = lat
             self.lon = lon
@@ -228,7 +228,7 @@ extension ResUpdateVC: UITableViewDataSource {
         }
         
         cell.cloOpenTime = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResChooseTimeVC") as! ResChooseTimeVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ResChooseTimeVC") as! ResChooseTimeVC
             vc.cloSelect = {(time) in
                 cell.btnOpenTime.setTitle(time, for: .normal)
                 self.arrOpenTime[indexPath.row] = time
@@ -239,7 +239,7 @@ extension ResUpdateVC: UITableViewDataSource {
         }
         
         cell.cloCloseTime = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResChooseTimeVC") as! ResChooseTimeVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ResChooseTimeVC") as! ResChooseTimeVC
             vc.cloSelect = {(time) in
                 cell.btnCloseTime.setTitle(time, for: .normal)
                 self.arrCloseTime[indexPath.row] = time

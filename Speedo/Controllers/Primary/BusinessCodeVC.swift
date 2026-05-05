@@ -47,7 +47,7 @@ class BusinessCodeVC: UIViewController {
     }
         
     @IBAction func btnSignup(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
         vc.form = "signup"
         vc.type = "USER"
         self.navigationController?.pushViewController(vc, animated: true)

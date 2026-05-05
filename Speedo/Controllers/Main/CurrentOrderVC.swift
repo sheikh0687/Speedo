@@ -53,7 +53,9 @@ extension CurrentOrderVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.orderCell, for: indexPath)!
+        
         let object = self.arr[indexPath.row]
         
         cell.lblItemName.text = object.restDetails?.restName ?? ""
@@ -61,21 +63,27 @@ extension CurrentOrderVC: UITableViewDataSource {
         cell.lblPrice.text = "\(k.currency)\(object.totalAmount ?? "")"
         cell.lblOrderStatus.text = object.status ?? ""
         cell.lblTotalAmount.text = "\(object.totalAmount ?? "") \(k.currency)"
-//        cell.lblExtraItem.text = object.cartDetails?.map({$0.extraItemName ?? ""}).joined(separator: ",")
+
+        //        cell.lblExtraItem.text = object.cartDetails?.map({$0.extraItemName ?? ""}).joined(separator: ",")
+        
         cell.lblSubtotal.text = "\(object.sub_total ?? "") \(k.currency)"
         cell.lblDeliveryFee.text = "\(object.delivery_fee ?? "").00 \(k.currency)"
         cell.lblDiscount.text = "\(object.discount_amt ?? "") \(k.currency)"
+        
         if object.status ?? "" != "Pending" {
             cell.lblOrderStatus.backgroundColor = hexStringToUIColor(hex: "DA4B13")
-        }else{
+        } else {
             cell.lblOrderStatus.backgroundColor = .lightGray
         }
+        
         Utility.setImageWithSDWebImage(object.restDetails?.restImage ?? "", cell.imgItem)
         
         if let orderType = object.orderType, orderType == "Current" {
             cell.lblOrderId.text = "\(R.string.localizable.orderId()) \(object.id ?? "")"
+            cell.lblOrderId.tintColor = .darkGray
         } else {
             cell.lblOrderId.text = "\(R.string.localizable.preOrderID()) \(object.id ?? "")"
+            cell.lblOrderId.tintColor = R.color.theme_color()
         }
         
 //        let arrItems = object.productDetails?.map({ "\($0.quantity ?? "") x \($0.itemName ?? "")" }).joined(separator: ",")
@@ -97,19 +105,20 @@ extension CurrentOrderVC: UITableViewDataSource {
         
         if object.date != "" && object.time != "" {
             cell.lblOrderDate.text = "\(object.time ?? "") \(object.date ?? "")"
-        }else{
+        } else {
             cell.lblOrderDate.text = object.dateTime ?? ""
         }
+        
         cell.btnReorder.isHidden = true
         
         cell.cloTrackOrder = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "DrvOrderDetailVC") as! DrvOrderDetailVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "DrvOrderDetailVC") as! DrvOrderDetailVC
             vc.orderId = object.id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
         cell.cloPrint = {() in
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ResPrintVC") as! ResPrintVC
             vc.orderId = self.arr[indexPath.row].id ?? ""
             self.navigationController?.pushViewController(vc, animated: true)
         }

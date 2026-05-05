@@ -57,7 +57,7 @@ class MyAddressVC: UIViewController {
     }
     
     @IBAction func btnAddNew(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "AddressPickerVC") as! AddressPickerVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "AddressPickerVC") as! AddressPickerVC
         vc.locationPickedBlock = { (a,b,c,d) in
             self.getAddress()
         }

@@ -12,9 +12,16 @@ import Alamofire
 class Service {
     
     //MARK: - POST API Request
-    class func post(url Url: String, params Parameters : [String: AnyObject]?,method Method : HTTPMethod,  vc parentVC: UIViewController, successBlock success : @escaping (_ responseData : Data) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void) {
+    class func post(url urlString: String, params Parameters : [String: AnyObject]?,method Method : HTTPMethod,  vc parentVC: UIViewController, successBlock success : @escaping (_ responseData : Data) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void) {
         
         if Utility.checkNetworkConnectivityWithDisplayAlert(isShowAlert: true) {
+            
+            var url:String! = ""
+            for val in Parameters! {
+                url += "\(val.key)=\(val.value)&"
+            }
+            print("Full_Api_For_Browser/***************************************************************************************/ \(urlString)?\(url ?? "")")
+            
             let manager = Alamofire.SessionManager.default
             manager.session.configuration.timeoutIntervalForRequest = 120
             manager.session.configuration.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
@@ -24,7 +31,7 @@ class Service {
             manager.session.configuration.urlCache = nil
             manager.session.configuration.urlCache?.removeAllCachedResponses()
             manager.session.configuration.urlCache = URLCache(memoryCapacity: 0, diskCapacity: 0, diskPath: nil)
-            manager.request(Url, method: Method, parameters: Parameters)
+            manager.request(urlString, method: Method, parameters: Parameters)
 //                .responseData(completionHandler: { (resp) in
 //                    print(resp)
 //                })
@@ -57,12 +64,19 @@ class Service {
     }
     
     //MARK: - APPDELETE POST API Request
-    class func kAppDelegatePost(url Url: String, params Parameters : [String: AnyObject]?,method Method : HTTPMethod, successBlock success : @escaping (_ responseData : Data) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void) {
+    class func kAppDelegatePost(url urlString: String, params Parameters : [String: AnyObject]?,method Method : HTTPMethod, successBlock success : @escaping (_ responseData : Data) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void) {
         
         if Utility.checkNetworkConnectivityWithDisplayAlert(isShowAlert: true) {
+            
+            var url:String! = ""
+            for val in Parameters! {
+                url += "\(val.key)=\(val.value)&"
+            }
+            print("Full_Api_For_Browser/***************************************************************************************/ \(urlString)?\(url ?? "")")
+            
             let manager = Alamofire.SessionManager.default
             manager.session.configuration.timeoutIntervalForRequest = 120
-            manager.request(Url, method: Method, parameters: Parameters)
+            manager.request(urlString, method: Method, parameters: Parameters)
                 .responseJSON {
                     response in
                     switch (response.result) {
@@ -89,8 +103,15 @@ class Service {
     }
     
     //MARK: - Multipart API Request for upload multiple photos
-    class func postSingleMedia(url Url: String, params:[String : String]?,imageParam: [String : UIImage?]?,videoParam: [String : Data?]?, parentViewController parentVC: UIViewController, successBlock success : @escaping (_ responseData : Data) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void){
+    class func postSingleMedia(url urlString: String, params:[String : String]?,imageParam: [String : UIImage?]?,videoParam: [String : Data?]?, parentViewController parentVC: UIViewController, successBlock success : @escaping (_ responseData : Data) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void){
         if Utility.checkNetworkConnectivityWithDisplayAlert(isShowAlert: true) {
+            
+            var url:String! = ""
+            for val in params! {
+                url += "\(val.key)=\(val.value)&"
+            }
+            print("Full_Api_For_Browser/***************************************************************************************/ \(urlString)?\(url ?? "")")
+            
             let headers: HTTPHeaders = [
                 /* "Authorization": "your_access_token",  in case you need authorization header */
                 // "Content-type": "multipart/form-data"
@@ -115,7 +136,7 @@ class Service {
                     multipartFormData.append(data!, withName: key, fileName: "\(key).mp4", mimeType: "video/mp4")
                 }
             },
-                             to: Url, headers: headers, encodingCompletion: { encodingResult in
+                             to: urlString, headers: headers, encodingCompletion: { encodingResult in
                                 switch encodingResult {
                                 case .success(let upload, _, _):
                                     upload
@@ -151,8 +172,15 @@ class Service {
     }
     
     //MARK: - Multipart API Request for upload multiple photos
-    class func postWithMedia(url Url: String, params Parameters : [String: String]?, imageParam: [String : Array<Any>?]?,videoParam: [String : Array<Any>?]?,vc parentVC: UIViewController, successBlock success : @escaping (_ responseData : Data) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void){
+    class func postWithMedia(url urlString: String, params Parameters : [String: String]?, imageParam: [String : Array<Any>?]?,videoParam: [String : Array<Any>?]?,vc parentVC: UIViewController, successBlock success : @escaping (_ responseData : Data) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void){
         if Utility.checkNetworkConnectivityWithDisplayAlert(isShowAlert: true) {
+            
+            var url:String! = ""
+            for val in Parameters! {
+                url += "\(val.key)=\(val.value)&"
+            }
+            print("Full_Api_For_Browser/***************************************************************************************/ \(urlString)?\(url ?? "")")
+            
             let headers: HTTPHeaders = [
                 /* "Authorization": "your_access_token",  in case you need authorization header */
                 // "Content-type": "multipart/form-data"
@@ -180,7 +208,7 @@ class Service {
                     }
                 }
             },
-                             to: Url, headers: headers, encodingCompletion: { encodingResult in
+                             to: urlString, headers: headers, encodingCompletion: { encodingResult in
                                 switch encodingResult {
                                 case .success(let upload, _, _):
                                     upload
@@ -216,13 +244,21 @@ class Service {
     }
     
 //    MARK: - POST API Request SwiftyJson
-    class func callPostService(apiUrl urlString: String, parameters params : [String: AnyObject]?,Method method : HTTPMethod,  parentViewController parentVC: UIViewController, successBlock success : @escaping ( _ responseData : AnyObject, _  message: String) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void) {
+    class func callPostService(apiUrl urlString: String, parameters Parameters : [String: AnyObject]?,Method method : HTTPMethod,  parentViewController parentVC: UIViewController, successBlock success : @escaping ( _ responseData : AnyObject, _  message: String) -> Void, failureBlock failure: @escaping (_ error: Error) -> Void) {
         
         if Utility.checkNetworkConnectivityWithDisplayAlert(isShowAlert: true) {
+            
+            var url:String! = ""
+            for val in Parameters! {
+                url += "\(val.key)=\(val.value)&"
+            }
+            print("Full_Api_For_Browser/***************************************************************************************/ \(urlString)?\(url ?? "")")
+            
+            
             let manager = Alamofire.SessionManager.default
             manager.session.configuration.timeoutIntervalForRequest = 120
             manager.session.configuration.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
-            manager.request(urlString, method: method, parameters: params)
+            manager.request(urlString, method: method, parameters: Parameters)
                 .responseJSON {
                     response in
                     switch (response.result) {

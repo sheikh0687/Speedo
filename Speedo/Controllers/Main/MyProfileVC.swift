@@ -51,10 +51,10 @@ class MyProfileVC: UIViewController {
     
     override func rightClick() {
         if let userType = k.userDefault.value(forKey: k.session.userType) as? String, userType == "USER" {
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
             self.navigationController?.pushViewController(vc, animated: true)
         } else {
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResEditProfileVC") as! ResEditProfileVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "ResEditProfileVC") as! ResEditProfileVC
             vc.comingFrom = "User"
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -76,7 +76,7 @@ class MyProfileVC: UIViewController {
     }
     
     @IBAction func btnChangePassword(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ChangePasswordVC") as! ChangePasswordVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "ChangePasswordVC") as! ChangePasswordVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -114,7 +114,7 @@ class MyProfileVC: UIViewController {
     }
     
     @IBAction func btnCart(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "CartVC") as! CartVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "CartVC") as! CartVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

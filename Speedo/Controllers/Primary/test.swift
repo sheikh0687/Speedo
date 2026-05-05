@@ -17,7 +17,7 @@ class test: UIViewController {
     
 
     @IBAction func btn(_ sender: Any) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "PrimaryMainVC") as! PrimaryMainVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     /*

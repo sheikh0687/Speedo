@@ -16,6 +16,7 @@ enum LeftMenuRes: Int {
     case myEarnings
     case changeLanguage    
     case terms
+    case deleteAccount
     case logout
 }
 
@@ -33,6 +34,7 @@ class ResLeftSideMenu: UIViewController {
         R.string.localizable.myEarning(),
         R.string.localizable.changeLanguage(),
         R.string.localizable.termsAndCondition(),
+        "Delete Account",
         R.string.localizable.logout()
     ]
     
@@ -44,6 +46,7 @@ class ResLeftSideMenu: UIViewController {
         R.image.ic_05(),
         R.image.ic_05(),
         R.image.ic_06(),
+        R.image.ic_07(),
         R.image.ic_07()
     ]
     
@@ -63,32 +66,32 @@ class ResLeftSideMenu: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.homeMain = R.storyboard.main().instantiateViewController(withIdentifier: "ResHomeVC") as! ResHomeVC
-        self.leftMenu = R.storyboard.main().instantiateViewController(withIdentifier: "ResLeftSideMenu") as! ResLeftSideMenu
+        self.homeMain = KStoryboard.instantiateViewController(withIdentifier: "ResHomeVC") as! ResHomeVC
+        self.leftMenu = KStoryboard.instantiateViewController(withIdentifier: "ResLeftSideMenu") as! ResLeftSideMenu
         self.tableViewOt.register(UINib(nibName: "LeftSideMenu", bundle: nil), forCellReuseIdentifier: "LeftSideMenu")
         self.tableViewOt.tableFooterView = UIView(frame: CGRect.zero)
         
-        let objResHomeVC = R.storyboard.main().instantiateViewController(withIdentifier: "ResHomeVC") as! ResHomeVC
+        let objResHomeVC = KStoryboard.instantiateViewController(withIdentifier: "ResHomeVC") as! ResHomeVC
         self.homeViewController = UINavigationController(rootViewController: objResHomeVC)
         
-        let objMyProfileVC = R.storyboard.main().instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
+        let objMyProfileVC = KStoryboard.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
         objMyProfileVC.comingFrom = "comingFrom"
         self.myProfileViewController = UINavigationController(rootViewController: objMyProfileVC)
         
-        let objMyReviewsVC = R.storyboard.main().instantiateViewController(withIdentifier: "MyReviewsVC") as! MyReviewsVC
+        let objMyReviewsVC = KStoryboard.instantiateViewController(withIdentifier: "MyReviewsVC") as! MyReviewsVC
         objMyReviewsVC.comingFrom = "Restaurant"
         self.myReviewsViewController = UINavigationController(rootViewController: objMyReviewsVC)
         
-        let objMyWalletVC = R.storyboard.main().instantiateViewController(withIdentifier: "ResMyWalletVC") as! ResMyWalletVC
+        let objMyWalletVC = KStoryboard.instantiateViewController(withIdentifier: "ResMyWalletVC") as! ResMyWalletVC
         self.myWalletViewController = UINavigationController(rootViewController: objMyWalletVC)
         
-        let objMyEarningsVC = R.storyboard.main().instantiateViewController(withIdentifier: "ResMyEarningsVC") as! ResMyEarningsVC
+        let objMyEarningsVC = KStoryboard.instantiateViewController(withIdentifier: "ResMyEarningsVC") as! ResMyEarningsVC
         self.myEarningViewController = UINavigationController(rootViewController: objMyEarningsVC)
         
-        let objChangeLanguageVC = R.storyboard.main().instantiateViewController(withIdentifier: "ChangeLanguageVC") as! ChangeLanguageVC
+        let objChangeLanguageVC = KStoryboard.instantiateViewController(withIdentifier: "ChangeLanguageVC") as! ChangeLanguageVC
         self.changeLangViewController = UINavigationController(rootViewController: objChangeLanguageVC)
         
-        let objTermsAndCondVC = R.storyboard.main().instantiateViewController(withIdentifier: "TermsAndCondVC") as! TermsAndCondVC
+        let objTermsAndCondVC = KStoryboard.instantiateViewController(withIdentifier: "TermsAndCondVC") as! TermsAndCondVC
         self.TermsAndCondViewController = UINavigationController(rootViewController: objTermsAndCondVC)
     }
     
@@ -104,14 +107,14 @@ class ResLeftSideMenu: UIViewController {
     }
     
     func changeController(_ index: Int) {
-//        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResHomeMainVC") as! ResHomeMainVC
+//        let vc = KStoryboard.instantiateViewController(withIdentifier: "ResHomeMainVC") as! ResHomeMainVC
 //        vc.indexSelect = index
 //        let rootVC = SlideMenuController(mainViewController: vc, rightMenuViewController: self.leftMenu)
 //        kAppDelegate.window?.rootViewController = rootVC
 //        kAppDelegate.window?.makeKeyAndVisible()
         
-        let mainViewController = R.storyboard.main().instantiateViewController(withIdentifier: "ResHomeMainVC") as! ResHomeMainVC
-        let leftViewController = R.storyboard.main().instantiateViewController(withIdentifier: "ResLeftSideMenu") as! ResLeftSideMenu
+        let mainViewController = KStoryboard.instantiateViewController(withIdentifier: "ResHomeMainVC") as! ResHomeMainVC
+        let leftViewController = KStoryboard.instantiateViewController(withIdentifier: "ResLeftSideMenu") as! ResLeftSideMenu
         let rootVC = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: leftViewController)
         kAppDelegate.window?.rootViewController = rootVC
         kAppDelegate.window?.makeKeyAndVisible()
@@ -133,6 +136,8 @@ class ResLeftSideMenu: UIViewController {
             self.slideMenuController()?.changeMainViewController(self.changeLangViewController, close: true)
         case .terms:
             self.slideMenuController()?.changeMainViewController(self.TermsAndCondViewController, close: true)
+        case .deleteAccount:
+            self.deleteAccount()
         case .logout:
             self.logout()
         }
@@ -183,6 +188,19 @@ class ResLeftSideMenu: UIViewController {
         alertController.addAction(yesAction)
         alertController.addAction(noAction)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    func deleteAccount() {
+        Utility.showAlertYesNoAction(withTitle: k.appName, message: R.string.localizable.areYouSureYouWantToDeleteAccount(), delegate: nil, parentViewController: self) { boool in
+            if boool {
+                Api.shared.deleteAccount(self) { responseData in
+                    let domain = Bundle.main.bundleIdentifier!
+                    UserDefaults.standard.removePersistentDomain(forName: domain)
+                    UserDefaults.standard.synchronize()
+                    Switcher.updateRootVC()
+                }
+            }
+        }
     }
 }
 

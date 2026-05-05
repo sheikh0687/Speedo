@@ -95,7 +95,7 @@ extension TopRatedRestVC: UICollectionViewDelegateFlowLayout {
 extension TopRatedRestVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "RestaurantMenuVC") as! RestaurantMenuVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "RestaurantMenuVC") as! RestaurantMenuVC
         vc.objRest = self.arrTopRestaurant[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }

@@ -112,7 +112,7 @@ extension ResOpenOrderVC: UITableViewDataSource {
         
         cell.cloTakeOrder = {() in
             if let status = obj.status, status == "Pending" {
-                let vc = R.storyboard.main().instantiateViewController(withIdentifier: "ResTimeSelVC") as! ResTimeSelVC
+                let vc = KStoryboard.instantiateViewController(withIdentifier: "ResTimeSelVC") as! ResTimeSelVC
                 vc.modalTransitionStyle = .crossDissolve
                 vc.modalPresentationStyle = .overFullScreen
                 vc.cloSelectTime = {(selTime) in

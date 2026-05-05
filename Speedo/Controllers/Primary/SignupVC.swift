@@ -88,7 +88,7 @@ class SignupVC: UIViewController {
         Api.shared.sendOtpSignUp(self, self.paramSendOtp()) { (response) in
             print(response)
             if let status = response.status, status == "1" {
-                let vc = R.storyboard.main().instantiateViewController(withIdentifier: "OtpVC") as! OtpVC
+                let vc = KStoryboard.instantiateViewController(withIdentifier: "OtpVC") as! OtpVC
                 vc.modalTransitionStyle = .crossDissolve
                 vc.modalPresentationStyle = .overFullScreen
                 vc.dictForOtp = self.paramSendOtp()
@@ -160,7 +160,7 @@ class SignupVC: UIViewController {
     }
     
     @IBAction func btnTermsCond(_ sender: UIButton) {
-        let vc = R.storyboard.main().instantiateViewController(withIdentifier: "TermsCondVC") as! TermsCondVC
+        let vc = KStoryboard.instantiateViewController(withIdentifier: "TermsCondVC") as! TermsCondVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -277,7 +277,7 @@ extension SignupVC: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         if userType == "USER" {
             if self.txtRestaurantCode.text != "" {
-                let vc = R.storyboard.main().instantiateViewController(withIdentifier: "TermsVC") as! TermsVC
+                let vc = KStoryboard.instantiateViewController(withIdentifier: "TermsVC") as! TermsVC
                 vc.restCodeId = self.txtRestaurantCode.text!
                 vc.comingFrom = "signup"
                 self.navigationController?.pushViewController(vc, animated: true)
@@ -285,7 +285,7 @@ extension SignupVC: UITextViewDelegate {
                 Utility.showAlertMessage(withTitle: k.appName, message: "Please enter restaurant code", delegate: nil, parentViewController: self)
             }
         } else {
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "TermsVC") as! TermsVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "TermsVC") as! TermsVC
             vc.restCodeId = "1"
             vc.comingFrom = "signup"
             self.navigationController?.pushViewController(vc, animated: true)

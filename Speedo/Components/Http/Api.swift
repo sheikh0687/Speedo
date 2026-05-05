@@ -1231,4 +1231,24 @@ class Api: NSObject {
             vc.unBlockUi()
         }
     }
+    
+    func removed_ApplyOffer(_ vc: UIViewController, _ params: [String: AnyObject], _ success: @escaping(_ responseData : ApiBasicForOffer) -> Void) {
+        vc.blockUi()
+        Service.post(url: Router.removed_apply_offer.url(), params: params, method: .get, vc: vc, successBlock: { (response) in
+            do {
+                let decoder = JSONDecoder()
+                let root = try decoder.decode(ApiBasicForOffer.self, from: response)
+                if root.status != nil {
+                    success(root)
+                }
+                vc.unBlockUi()
+            } catch {
+                print(error)
+            }
+            vc.unBlockUi()
+        }) { (error: Error) in
+            vc.alert(alertmessage: error.localizedDescription)
+            vc.unBlockUi()
+        }
+    }
 }

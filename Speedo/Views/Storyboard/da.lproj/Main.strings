@@ -1,3 +1,4 @@
+
 /* Class = "UIButton"; normalTitle = "Print"; ObjectID = "0AH-XD-fDn"; */
 "0AH-XD-fDn.normalTitle" = "Print";
 
@@ -203,7 +204,7 @@
 "EFe-08-wIo.normalTitle" = "Bruger";
 
 /* Class = "UIButton"; normalTitle = "Cash"; ObjectID = "EmC-H9-Wdg"; */
-"EmC-H9-Wdg.normalTitle" = "Betale i butik";
+"EmC-H9-Wdg.normalTitle" = "Kontant";
 
 /* Class = "UILabel"; text = "Total Amount"; ObjectID = "Epv-1b-bLa"; */
 "Epv-1b-bLa.text" = "Total beløb";

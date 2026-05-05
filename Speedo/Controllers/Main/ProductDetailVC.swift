@@ -128,7 +128,7 @@ class ProductDetailVC: UIViewController {
     
     override func rightClick() {
         if Utility.isUserLogin() {
-            let vc = R.storyboard.main().instantiateViewController(withIdentifier: "CartVC") as! CartVC
+            let vc = KStoryboard.instantiateViewController(withIdentifier: "CartVC") as! CartVC
             self.navigationController?.pushViewController(vc, animated: true)
         } else {
             Utility.showAlertRegistration(parentViewController: self) { (bool) in
@@ -521,6 +521,7 @@ class ProductDetailVC: UIViewController {
         self.arrExtraItemName = []
         self.arrExtraItemQty = []
         self.arrExtraItemQtyPrice = []
+        
         var index1 = 0
         let cellsIncludedItemPrice = self.tblIncludedItemPrice.visibleCells as! Array<ProductCheckCell>
         for cell in cellsIncludedItemPrice {
