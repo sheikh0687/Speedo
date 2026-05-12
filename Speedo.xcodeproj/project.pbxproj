@@ -565,7 +565,6 @@
 				040C218D262B58A800D79EAB /* Models */,
 				040C218C262B589F00D79EAB /* Resources */,
 				040C218B262B589A00D79EAB /* Views */,
-				040C2187262B589000D79EAB /* ViewModels */,
 				040C2162262B588600D79EAB /* Info.plist */,
 			);
 			path = Speedo;
@@ -587,13 +586,6 @@
 				040C2178262B588600D79EAB /* Info.plist */,
 			);
 			path = SpeedoUITests;
-			sourceTree = "<group>";
-		};
-		040C2187262B589000D79EAB /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		040C218B262B589A00D79EAB /* Views */ = {
@@ -1930,7 +1922,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.0.2;
+				MARKETING_VERSION = 4.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = jf.Speedo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1959,7 +1951,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.0.2;
+				MARKETING_VERSION = 4.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = jf.Speedo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

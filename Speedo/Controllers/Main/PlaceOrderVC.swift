@@ -26,7 +26,7 @@ class PlaceOrderVC: UIViewController {
     var selectedTime = ""
     var selectedDelivery = "Pickup"
     var selectedPayment = ""
-    var selectedPayType = "cash"
+    var selectedPayType = "Online"
     
     var totalAmount = ""
     var discountAmount = ""
@@ -178,8 +178,7 @@ class PlaceOrderVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func removedOffer()
-    {
+    func removedOffer() {
         var paramDict: [String : AnyObject] = [:]
         paramDict["user_id"] = k.userDefault.value(forKey: k.session.userId) as AnyObject?
         paramDict["rest_id"] = k.userDefault.value(forKey: k.session.interestedRestId) as AnyObject?
@@ -196,7 +195,6 @@ class PlaceOrderVC: UIViewController {
             }
         }
     }
-    
     
     func getEstimateDeliveryFees(_ lat: String, _ lon: String) {
         Api.shared.estimateDeliveryFees(self, self.paramEstimateDeliveryFees(lat, lon)) { (response) in
